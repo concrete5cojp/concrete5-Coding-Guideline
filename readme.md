@@ -5,7 +5,7 @@ Switch branch for different language and versions.
 - コーディングガイドライン (5.7.x 以降)
 - concrete5.7.3.1 対応
 - 2015/4/11
-- Authored by Katz Ueno
+- Authored by Katz Ueno (コンクリートファイブジャパン株式会社)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline/settings
 
 
@@ -32,6 +32,9 @@ HTML+CSS+JS の知識を持ったエンジニアが、クライアントワー�
 concrete5 はフロントのページ上で編集可能な CMS です。
 
 それは、編集ができるような管理系のインタフェースが、オモテのページにも出力されます。そうすると、自作 concrete5 テーマと、concrete5 の編集管理をするインターフェースがコンフリクトを起こさないようにする必要があります。
+
+このコーディングガイドラインは、コンクリートアイブジャパン株式会社が、自身が行っている受託案件のために、パートナー企業にお見せしているコーディングガイドラインを一般公開しているものです。コンクリートファイブジャパン株式会社では、企業・団体様の concrete5 サイト制作や制作会社様のプロジェクトのサポートを行っています。
+
 
 ## ターゲット＆想定シーン
 
