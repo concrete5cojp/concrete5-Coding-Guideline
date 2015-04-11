@@ -2,84 +2,90 @@
 
 Switch branch for different language and versions.
 
-- コーディングガイドライン (5.7.x 以降)
-- concrete5.7.3.1 対応
-- 2015/4/11
+- concrete5.7.3.1 and later
+- On 2015/4/11
 - Authored by Katz Ueno
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline/settings
 
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
-# 本コーディングガイドラインについて
+Pull requests are welcomed!
 
-## 趣旨
+Still translating some contents.
 
-HTML+CSS+JS の知識を持ったエンジニアが、クライアントワークで concrete5 のオリジナルテーマを作成する際、元となるコーディングを作成することが一般的です。そのコーディングを concrete5 の親和性を高めるためのコーディングガイドラインです。
+# About this guideline
 
-concrete5 は表のページ上で編集可能な CMS です。
+## Purpose
 
-それは、編集ができるような管理系のインタフェースが、表のページにも出力されます。そうすると、自作 concrete5 テーマと、concrete5 の編集管理をするインターフェースがコンフリクトを起こさないようにする必要があります。
+This guideline was made for front-end engineer who is creating an original concrete5 for client specific work.
 
-## ターゲット＆想定シーン
+concrete5 is fron-end CMS.
 
-このコーディングガイドラインは下記の方をターゲットにしています。
+However it means that it be could easily resulted in CSS and/or JS conflict between site's CSS and interface UI..
 
-- HTML + CSS + JS の知識がある
-- concrete5 の基本的な知識がある
-- お客様が希望するオリジナルデザインをベースに concrete5 テーマの作成をする
-- デザインは PSD や AI で提供され、コーディングを行う
+This coding guideline is made to help you avoid the conflict for concrete5 Japan, Inc. partners.
 
-またデザインの時点でも、コーダーの方が逐一、コーディングが可能かどうかの確認もされることをおすすめします。
+## Target
 
-## ライセンス
+This coding guildeline targets to the following:
 
-このコーディングガイドラインはは クリエイティブ・コモンズ 表示 4.0 国際 ライセンスの下に提供されています。
+- Have the knowledge of HTML + CSS + JS
+- Have the basic knowledge of concrete5
+- Building a original concrete5 theme based on the client's request
+- Design is usually provided via Photoshop PSD, Illustrator's AI or other design data. And then crete HTML+CS+JS template
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+Additionally, we recommend the front-end engineer to closely get in touch with the designer during design process.
+
+## License
+
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
 
 
-# 本プロジェクトの仕様 (例)
+# Example: Basic Specification
 
-プロジェクトのコーディングの基本的な仕様を記入する例を書いておきます。
+This is an example table for a project before you start coding.
 
-## 基本仕様 (例)
+## Example: Basics
 
-項目 | 内容
+Name | Content
 ----|----
-テーマハンドル | ***
-使用フレームワーク | Bootstrap / Foundation / 960Grid / オリジナル
+Theme Handle | ***
+Framework used | Bootstrap / Foundation / 960Grid / Original
 
 
-## 使用ライブラリとバージョン (例)
+## Example: Libraries Using
 
-プロジェクトで使用するライブラリとバージョンを記入してください
+Please indicate which libraries you are planning to use
 
-使用ライブラリ | バージョン
+Libraries | Version
 ---- | ---
 Bootstrap | 3.1.1
 jQuery | 1.11.1
 Bxslider | TBA
 
 
-## ページテンプレートリスト (例)
+## Example: Page Template List
 
-Body Wrapper Class で出力を変更したいときに対応表として利用してください
+These page template handle are used for Body Wrapper Class in concrete5. So we recommend that you determine the following Page Template list before start coding.
 
-名前 | ハンドル
+Name | Handle
 --- | ---
-p0_0 総合トップ | p0_0_top
-p0_1 事業部トップ | p0_0_top_dept
-p1_0 汎用 | default
-p2_0 製品トップ | p2_0_product_top
-p2_1 製品一覧 | p2_1_product_index
-p2_2 製品詳細 | p2_1_product_detail
+p0_0 Home | p0_0_top
+p0_1 Department Top | p0_0_top_dept
+p1_0 Default | default
+p2_0 Product Top | p2_0_product_top
+p2_1 Product Index | p2_1_product_index
+p2_2 Product Detail | p2_1_product_detail
 
-* 半角英大文字、半角英小文字、半角数字とアンダースコア(_)のみが使用可能です。
-* アンダースコアー(_) は、Body Wrapper Class として出力されるときに、 **ハイフン(-) に自動変換** されます
+* You can only use letters, numbers and underscore (_)
+* Underscore (_) will be converted to hyphen (-) when printed to the Body Wrapper Class **automatically**
 
-## ページタイプリスト (例)
+
+## Example: Page Type List
 
 Body Wrapper Class で出力を変更したいときに対応表として利用してください
 
