@@ -12,7 +12,16 @@ Switch branch for different language and versions.
 
 Pull requests are welcomed!
 
-Still translating some contents.
+## Translations
+
+Language | URL
+----|----
+English | https://github.com/katzueno/concrete5-Coding-Guideline/tree/english
+Japanese (日本語) | https://github.com/katzueno/concrete5-Coding-Guideline/tree/japanese
+
+
+We're still translating English.
+
 
 # About this guideline
 
