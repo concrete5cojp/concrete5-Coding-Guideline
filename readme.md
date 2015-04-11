@@ -4,7 +4,7 @@ Switch branch for different language and versions.
 
 - concrete5.7.3.1 and later
 - On 2015/4/11
-- Authored by Katz Ueno
+- Authored by Katz Ueno (concrete5 Japan, Inc.)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline/settings
 
 
@@ -34,6 +34,10 @@ concrete5 is fron-end CMS.
 However it means that it be could easily resulted in CSS and/or JS conflict between site's CSS and interface UI..
 
 This coding guideline is made to help you avoid the conflict for concrete5 Japan, Inc. partners.
+
+concrete5 Japan, Inc. is helping various company's concrete5 project. Please feel free to contact us at any time.
+
+http://concrete5.co.jp/
 
 ## Target
 
@@ -79,7 +83,7 @@ Bxslider | TBA
 
 ## Example: Page Template List
 
-These page template handle are used for Body Wrapper Class in concrete5. So we recommend that you determine the following Page Template list before start coding.
+These page template handles are used for Body Wrapper Class in concrete5. So we recommend that you determine the following Page Template list before start coding.
 
 Name | Handle
 --- | ---
@@ -96,83 +100,84 @@ p2_2 Product Detail | p2_1_product_detail
 
 ## Example: Page Type List
 
-Body Wrapper Class で出力を変更したいときに対応表として利用してください
+These page type handles are used for Body Wrapper Class in concrete5. So we recommend that you determine the following Page Type list before start coding.
 
-名前 | ハンドル | 使用ページテンプレート
+Name | Hangle | Page Template used
 --- | --- | ---
-pt0_0 総合トップ | pt0_0_top | p0_0_top
-pt0_1_1 ○事業部トップ | pt0_0_1_top_XX_dept | p0_0_top_dept
-pt0_1_2 ○事業部トップ | pt0_0_2_top_XX_dept | p0_0_top_dept
-pt0_1_3 ○事業部トップ | pt0_0_3_top_XX_dept | p0_0_top_dept
-pt1_0_1 汎用一覧 | default_index | default
-pt1_0_2 汎用詳細 | default_page | default
-pt2_0 ライブラリトップ | pt2_0_product_top | p2_0_product_top
-pt2_1_1 製品一覧 XXX | pt2_1_1_product_index_XXX | p2_1_product_index
-pt2_1_2 製品一覧 XXX | pt2_1_2_product_index_XXX | p2_1_product_index
-pt2_1_3 製品一覧 XXX | pt2_1_3_product_index_XXX | p2_1_product_index
-pt2_2_1 製品詳細 XXX | pt2_1_1_product_index_XXX | p2_1_product_detail
-pt2_2_2 製品詳細 XXX | pt2_1_2_product_index_XXX | p2_1_product_detail
-pt2_2_3 製品詳細 XXX | pt2_1_3_product_index_XXX | p2_1_product_detail
+pt0_0 Home | pt0_0_top | p0_0_top
+pt0_1_1 A Deaprtment Top | pt0_0_1_top_XX_dept | p0_0_top_dept
+pt0_1_2 B Department Top | pt0_0_2_top_XX_dept | p0_0_top_dept
+pt0_1_3 C Department Top | pt0_0_3_top_XX_dept | p0_0_top_dept
+pt1_0_1 Default Index | default_index | default
+pt1_0_2 Default Detail | default_page | default
+pt2_0 Product Top | pt2_0_product_top | p2_0_product_top
+pt2_1_1 Product Index Category A | pt2_1_1_product_index_XXX | p2_1_product_index
+pt2_1_2 Product Index Category B | pt2_1_2_product_index_XXX | p2_1_product_index
+pt2_1_3 Product Index Category C | pt2_1_3_product_index_XXX | p2_1_product_index
+pt2_2_1 Product Detail Category A | pt2_1_1_product_index_XXX | p2_1_product_detail
+pt2_2_2 Product Detail Category B | pt2_1_2_product_index_XXX | p2_1_product_detail
+pt2_2_3 Product Detail Category C | pt2_1_3_product_index_XXX | p2_1_product_detail
 
 
-* 半角英大文字、半角英小文字、半角数字とアンダースコア(_)のみが使用可能です。
-* アンダースコアー(_) は、Body Wrapper Class として出力されるときに、 **ハイフン(-) に自動変換** されます
+* You can only use letters, numbers and underscore (_)
+* Underscore (_) will be converted to hyphen (-) when printed to the Body Wrapper Class **automatically**
 
 
-# 基本規則
+# Basic Rules
 
-- 文字コードは UTF-8 を使用
-- 改行コードは LF (UNIX互換) を使用
+- You must use UTF-8 encoding
+- You must use LF (UNIX) line break
 
 
-# ファイルやアセットの保存場所
+# Where to save
 
-concrete5 では、テーマ関連のファイルを下記フォルダに保存しています。
+concrete5 saves the theme related files under the following locations.
 
-バージョン | 保存先
+Version | Destination
 --- | ---
 concrete5.6.x | /themes/XXX/
 concrete5.7.x | /application/themes/XXX
 
-* XXX はテーマの識別ハンドル
-* 半角英小文字と数字のみにしてくだい。英語大文字は使えません。
-* 上記保存場所は自作テーマを保存する先です。パッケージ化をする場合は、「packages/XXX/themes/XXX/」以下となります。
+* XXX should be replaced to your desired theme handle
+* You can only use small letters, numbers and underscore (_). You CANNOT user CAPITAL letters.
+
+The above locations are for your own theme. If you want to make your theme as 'package', You must follow it own rules. Please visit [concrete5 offocial documentatio section on concrete5.org](www.concrete5.org/documentation/developers/5.7/)
 
 
-## テーマ埋め込みのCSS, JS, 画像ファイルの保存場所
+## Images, CSS and JS assets that are embedded onto theme
 
-コーディングを行う時点で、テーマに埋め込む CSS や JS 画像ファイルは
+Images, CSS and JS assets should be saved onto the following locations. (These are files that are fixed onto the theme only.)
 
 - /application/XXX/css/
 - /application/XXX/js/
 - /application/XXX/images/
 
-や
+or
 
 - /application/XXX/assets/css/
 - /application/XXX/assets/js/
 - /application/XXX/assets/images/
 
-などとまとめられることを推奨します。
 
 
-## HTML コーディング
+## HTML Coding location
 
-HTML コーディングもモックアップなどは
+We recommend you to save HTML mock ups under:
 
 - /application/XXX/html/
 
-配下に設置し、同じ、css, js, 画像ファイルを読み込むように設定するとデバッグが用意になります。
+Please refer the same CSS, JS and images files that used for concrete5 themes files, so that it would be easier to debug.
 
 
-# ライブラリについて
+# Library set
 
-各バージョンのconcrete5 に同梱しているライブラリです。
-同じライブラリを使用する場合は下記のバージョンを使用してください。
+Each cocnrete5 is shipped with the famous libraries.
 
-**特に jQuery は concrete5 と密接に関わり合っているので、競合する JavaScript を利用する際は、最新の注意を払ってください。**
+If you plan to use the same libraries, you should try to use the same version of libraries to avoid conflict
 
-ライブラリ名 |c5.6.3.3| c5.7.3.1
+**Especially, you should use same version of jQuery that concrete5 use**
+
+Library name |c5.6.3.3| c5.7.3.1
 ----- |---- | -----
 ace | TBA | TBA
 backstretch | TBA | TBA
@@ -198,24 +203,25 @@ spectrum | N/A | TBA
 swfobject | N/A | TBA
 TinyMCE | 3.5.11 | N/A
 
-# CSS/JS フレームワーク
+# CSS/JS Framework
 
-レスポンシブデザインなどを行う場合 concrete5 では下記のフレームワークに対応しています。
+If you want to make a (responsive) concrete5 theme, concerte5 supports the following framework
 
 - Bootstrap
 - Foundation
 - 960Grid
 
-どのフレームワークを決めかねている場合は Bootstrap をお使いください。
+If you are not sure which framework to use, we recommend to use Bootsrap.
 
-ただ concrete5 のバージョンによって concrete5 で使用している Bootstrap のバージョンが変わってくるので、ご注意ください。
+However, concrete5 use different version of Bootstrap. Be careful.
 
-Foundation をお使いの場合は UI の部分のハックが多少必要ですが、Bootstrap のバージョンには依存されません。
+When using Foundation, you may need to be careful. But you don't get affected by the Bootstrap version.
 
 
-# CSS 命名について
 
-## 禁止 & 注意事項
+# Naming CSS
+
+## Do-nots & Cautions
 
 ### body タグ禁止事項
 
