@@ -11,15 +11,27 @@ Switch branch for different language and versions.
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
+Pull requests are welcomed!
+
+## Translations / 翻訳
+
+言語 | URL
+----|----
+English (英語) | https://github.com/katzueno/concrete5-Coding-Guideline/tree/english
+Japanese (日本語) | https://github.com/katzueno/concrete5-Coding-Guideline/tree/japanese
+
+
+
+
 # 本コーディングガイドラインについて
 
 ## 趣旨
 
 HTML+CSS+JS の知識を持ったエンジニアが、クライアントワークで concrete5 のオリジナルテーマを作成する際、元となるコーディングを作成することが一般的です。そのコーディングを concrete5 の親和性を高めるためのコーディングガイドラインです。
 
-concrete5 は表のページ上で編集可能な CMS です。
+concrete5 はフロントのページ上で編集可能な CMS です。
 
-それは、編集ができるような管理系のインタフェースが、表のページにも出力されます。そうすると、自作 concrete5 テーマと、concrete5 の編集管理をするインターフェースがコンフリクトを起こさないようにする必要があります。
+それは、編集ができるような管理系のインタフェースが、オモテのページにも出力されます。そうすると、自作 concrete5 テーマと、concrete5 の編集管理をするインターフェースがコンフリクトを起こさないようにする必要があります。
 
 ## ターゲット＆想定シーン
 
