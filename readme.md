@@ -1,7 +1,13 @@
-concrete5 コーディングガイドライン (5.7.x 以降)
+# concrete5 Coding Guideline (5.7.x)
+
+Switch branch for different language and versions.
+
+- コーディングガイドライン (5.7.x 以降)
 - concrete5.7.3.1 対応
 - 2015/4/11
 - Authored by Katz Ueno
+- GitHub: https://github.com/katzueno/concrete5-Coding-Guideline/settings
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
