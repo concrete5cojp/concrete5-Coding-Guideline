@@ -10,7 +10,7 @@ Switch branch for different language and versions.
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
-Pull requests are welcomed!
+Pull requests are welcome!
 
 ## Translations
 
@@ -20,10 +20,11 @@ English | https://github.com/katzueno/concrete5-Coding-Guideline/tree/english
 Japanese (日本語) | https://github.com/katzueno/concrete5-Coding-Guideline/tree/japanese
 
 
-We're still translating English.
+Additional translation are welcome! Please fork it, make a branch for the language, translate and send me the pull request!
+I'm still translating English.
 
 
-# About this guideline
+# About This Guideline
 
 ## Purpose
 
@@ -127,7 +128,7 @@ pt2_2_3 Product Detail Category C | pt2_1_3_product_index_XXX | p2_1_product_det
 - You must use LF (UNIX) line break
 
 
-# Where to save
+# Where to Save
 
 concrete5 saves the theme related files under the following locations.
 
@@ -158,7 +159,7 @@ or
 
 
 
-## HTML Coding location
+## HTML Coding Location
 
 We recommend you to save HTML mock ups under:
 
@@ -167,7 +168,7 @@ We recommend you to save HTML mock ups under:
 Please refer the same CSS, JS and images files that used for concrete5 themes files, so that it would be easier to debug.
 
 
-# Library set
+# Library Set
 
 Each cocnrete5 is shipped with the famous libraries.
 
@@ -175,7 +176,7 @@ If you plan to use the same libraries, you should try to use the same version of
 
 **Especially, you should use same version of jQuery that concrete5 use**
 
-Library name |c5.6.3.3| c5.7.3.1
+Library Name |c5.6.3.3| c5.7.3.1
 ----- |---- | -----
 ace | TBA | TBA
 backstretch | TBA | TBA
