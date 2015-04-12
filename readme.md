@@ -284,7 +284,7 @@ Try to avoid any coding that uses ID.
 Meta Tilte, Description, Keywords, OGP tags will be inserted. It's not necessary to implement for HTML coding
 
 
-# Conding Requirement
+# Coding Requirement
 
 ## Provide ALL patterns of blocks
 
@@ -325,23 +325,22 @@ Consider the patterns when text is shorter and longer than expected.
 
 ## Try to make the block coding as generic as possible so that it can be used for other pages
 
-- ブロックはエリアに自由に配置できます (上級権限モードなどで制限は可能)
-- そのエリアだけにしか使えないようにするなど、特定の場合を除く、ブロック外の class から継承するようなことは避けてください。
+- Blocks can be placed anywhere in the area (unless you resrtict via permission settings)
+- Try to avoid the coding that can only be used at certain area. For example, the certain area is wrapped with certain div. The block is inheriting the CSS from it. (There may be some exception such as header, footer or the area with different background color)
 
 ## BEM (Block Elements Modifier)
 
-ページの枠をコーディングする際、BEM のコンセプトに基づいてコーディングをされることを推奨します。
+We recommend to embrace BEM method.
 
-参考記事
-https://app.codegrid.net/entry/bem-basic-1
-
+https://en.bem.info/
 
 ## Use of LESS
 
-concrete5.7.x では、LESS のコンパイラーを内蔵しています。
-HTMLコーディングを確認する際は、コンパイルが必要ですが、concrete5 ではコンパイルが必要ありません。
+From concrete5.7.x, it equipped with LESS compiler.
+Except when previewing HTML template, there is no need to compile LESS.
 
-CSS プリプロセッサーを使用する際は LESS を採用されることをおすすめしますが、必須ではありません。
+We recommend to use LESS, But not necessary as long as you can provide compilied CSS file.
+
 
 # Coding Guideline for Each Block
 
