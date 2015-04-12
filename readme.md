@@ -12,6 +12,7 @@ Switch branch for different language and versions.
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
 Pull requests are welcomed!
+ガイドラインの誤字・脱字の修正、編集の提案などプルリクエストをお待ちしております。
 
 ## Translations / 翻訳
 
@@ -49,9 +50,23 @@ concrete5 はフロントのページ上で編集可能な CMS です。
 
 ## ライセンス
 
-このコーディングガイドラインはは クリエイティブ・コモンズ 表示 4.0 国際 ライセンスの下に提供されています。
+このコーディングガイドラインは クリエイティブ・コモンズ 表示 4.0 国際 ライセンスの下に提供されています。
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+
+このガイドラインを使用することにより、いかなる損害が発生したとしても、コンクリートファイブジャパン株式会社は責任を負わないことを同意したとみなします。
+
+
+## お断り
+
+このガイドラインは、あくまでも指針として提供しているものです。月日の変化により、コーディングのベストな方法は常に変わり続けます。
+
+このガイドラインのご利用されることにより、いかなる損害が発生したとしても、コンクリートファイブジャパン株式会社、および他の作者は一切の責任を負いません。
+
+
+## クレジット
+
+- Katz Ueno (concrete5 Japan, Inc) - http://concrete5.co.jp
 
 
 
