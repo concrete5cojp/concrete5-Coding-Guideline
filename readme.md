@@ -21,7 +21,8 @@ Japanese (日本語) | https://github.com/katzueno/concrete5-Coding-Guideline/tr
 
 
 Additional translation are welcome! Please fork it, make a branch for the language, translate and send me the pull request!
-I'm still translating English.
+
+**I'm still translating English.**
 
 
 # About This Guideline
@@ -34,7 +35,7 @@ concrete5 is front-end flexible CMS. But it also means that it be could easily r
 
 This coding guideline is made to help you avoid the conflict for concrete5 Japan, Inc. partners.
 
-concrete5 Japan, Inc. is helping various company's concrete5 project. Please feel free to contact us at any time.
+concrete5 Japan, Inc. is helping various company's concrete5 project. Please feel free to contact us at any time for your project needs. We can work internationally.
 
 http://concrete5.co.jp/
 
@@ -44,7 +45,7 @@ This coding guildeline targets to the following:
 
 - Have the knowledge of HTML + CSS + JS
 - Have the basic knowledge of concrete5
-- Building a original concrete5 theme based on the client's request
+- Building an original concrete5 theme based on the client's request
 - Design is usually provided via Photoshop PSD, Illustrator's AI or other design data. And then crete HTML+CS+JS template
 
 Additionally, we recommend the front-end engineer to closely get in touch with the designer during design process.
@@ -293,11 +294,11 @@ Meta Tilte, Description, Keywords, OGP tags will be inserted. It's not necessary
 ## Provide the patterns when the text, image and/or data is empty
 
 - Consider the coding when elements are empty.
-- Example: When thumbnail image of Page List is not present, the position, margin and padding of page title won't be messed up and etx.
+- Example: When thumbnail image of Page List is not present, the position, margin and padding of page title won't be messed up and etc.
 
-## Consider the Pattern of Repeated Element
+## Consider the Pattern of Repeated Elements
 
-- When showing the repeating elementsm, don't break the design layout by increasing and decreasing the number of elements.
+- When showing the repeating elements, don't break the design layout by increasing and decreasing the number of elements.
 - When showing the grid style elements, don't messed up the layout by increasing and decreasing the number of elements.
 - When showing the grid style coding, don't wrap the elements by each row but entire section of the block.
 - Make sure to provide coding with repeating elements of various patterns.
@@ -338,7 +339,7 @@ https://en.bem.info/
 From concrete5.7.x, it equipped with LESS compiler.
 Except when previewing HTML template, there is no need to compile LESS.
 
-We recommend to use LESS, But not necessary as long as you can provide compilied CSS file.
+We recommend to use LESS, But not necessary as long as you can provide compiled CSS file.
 
 
 # Coding Guideline for Each Block
