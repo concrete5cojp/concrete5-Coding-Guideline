@@ -11,6 +11,8 @@ Switch branch for different language and versions.
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
 Pull requests are welcome!
+Please help fix any misspell, grammar error and others to improve!
+
 
 ## Translations
 
@@ -56,6 +58,21 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
+Use this guideline "as is". We hold no responsibility against any damages caused by this guideline.
+
+By using this guideline, you have agreed that concrete5 Japan, Inc and its affiliate holds no responsibility or liability against any damages caused by using this guideline.
+
+## Disclaimer
+
+This guideline will always be work-in-progress.
+
+There is no perfect way to code perfeclty.
+
+Please use this guideline "as is". We hold no responsibility against any damages caused by this guideline.
+
+## Credit
+
+- Katz Ueno (concrete5 Japan, Inc) - http://concrete5.co.jp
 
 
 # Example: Basic Specification
