@@ -29,9 +29,7 @@ We're still translating English.
 
 This guideline was made for front-end engineer who is creating an original concrete5 for client specific work.
 
-concrete5 is fron-end CMS.
-
-However it means that it be could easily resulted in CSS and/or JS conflict between site's CSS and interface UI..
+concrete5 is front-end flexible CMS. But it also means that it be could easily resulted in CSS and/or JS conflict between site's CSS and interface UI..
 
 This coding guideline is made to help you avoid the conflict for concrete5 Japan, Inc. partners.
 
