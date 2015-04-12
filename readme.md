@@ -223,104 +223,107 @@ When using Foundation, you may need to be careful. But you don't get affected by
 
 ## Do-nots & Cautions
 
-### body タグ禁止事項
+### body Do-nots
 
-#### body に ID や class を付けない (必須)
+#### Don't add ID and class to body (Required)
 
-ページのデザインを変えるために Body タグに ID や class をつけることはしないでください。
+Don't add ID and class to body tag.
 
-#### body に Position を設定しない (必須)
+#### body に Position を設定しない (Required)
 
-Body には Position を設定しないでください。
+Don't add position to body.
 
-#### Body には背景の設定をしない (推奨)
+#### No background (Recommended)
 
-背景の設定は避けてください。
-下記の Body Wrapper クラスで背景を指定するようにしてください。
+Don't add background to body. Please apply background to the following Body Wrapper Class
 
 
-## ccm- クラスを使わない (必須)
+## don't use ccm-* classes (Required)
 
-ccm-page というクラスを覗いて ccm-* というクラスは使用しないでください。これらは concrete5 が管理画面などのインターフェース用に使用しています。
+Except `ccm-page`, don't set any class naming `ccm-*` These are used for concrete5 UIs and dashboard.
 
-## Body Wrapper クラス (必須)
+## Body Wrapper Class (Required)
 
-concrete5.7.x では、下記の CSS クラスが組み込まれた <div> タグを <body> の開始直後と </body> 閉じタグの直前に挿入します。
+From concrete5.7.x, the div tag with following CSS classes are inserted right after the body tag; and it closes right before the end of body tag.
 
 - ccm-page
-- page-template-XXX (XXX はページテンプレートのハンドル)
-- page-type-XXX (XXX はページタイプのハンドル)
+- page-template-XXX (XXX is the handle of Page Templates)
+- page-type-XXX (XXX is the handle of Page Type)
 
-入れ子での CSS スタイルの適応を行う場合は、上記 class を活用できます。
+If you would like to apply certain overall design change depends on the Page Template and Types, you may use the above classes.
 
-高度な表現を行わない場合は、「page-template-XXX」や「page-type-XXX」のクラスは無視してコーディングを行ってください。
-
-* ページテンプレートとページタイプのハンドルは半角英大文字、半角英小文字、半角数字とアンダースコア(_)のみが使用可能です。
-* アンダースコアー(_) は、Body Wrapper Class として出力されるときに、 **ハイフン(-) に自動変換** されます
-* ページタイプは「指定なし」が可能なため、page-type-XXX が出力されないパターンも想定可能です。
+If you are not sure what to do, just ignore `page-template-XXX` and `page-type-XXX` classes but just ccm-page.
 
 
-## Z-index について (必須)
-
-Z-index は 1000 未満にしてください。
-
-* concrete5.6.x は 5 未満
+* To name Page Template and Page Type handles, you can use alphabet, number and underscore(_)
+* However, underscore(_) will be **converted to hyphen (-) automatically** when printing it to the body wrapper class
+* The user may leave the Page Type blank. Therefore, `page-type-xxx` may not be printed out to HTML sometime.
 
 
-## ファイルのアップロード場所に依存しない (必須)
+## Z-index (Required)
 
-編集者が自由に画像をアップロードして使うような画像の場合、ファイルのアップロード位置に依存したコーディングは行わないでください。
+Z-index, for all of your CSS, must be set to less than 1000.
 
-- ユーザーが編集するブロック内部の画像はファイルマネーはーがランダムに生成したフォルダ内に格納されます。
-- マイスオーバーで画像ファイル名の末尾に「_over」を付与する Javascript などは動作しません (* テーマ内にハードコーディングする場合を除きます)
-
-## ブロックに ID を指定しない (強く推奨)
-
-ブロックに ID を指定して表示するようなコーディングは避けてください。
-
-## meta title, description, keywords, OGP タグ は不要 (推奨)
-
-concrete5 側で挿入するため、不要です。
-
-# 必須事項
-
-## ページ上に表示されるすべての表示パターンを網羅してください。
-
-- 仕様書、デザインデータを元に、必要な表示パターンすべてをコーディングしてください。
-- 例：画像の左寄せ、中寄せ、右寄せなどの複数パターンが想定される場合はそのすべてのパターンのコーディングを行ってください。
-
-## トルツメの対応
-
-- 要素が未入力の場合、トルツメにすることによって表示が崩れるようにしないでください。
-- 例：ページリストのサムネイル画像がない場合、ページタイトルの表示部分が崩れないようにする。
-
-## 繰り返し表示予定の箇所の対応
-
-- 同じ要素を繰り返し出力する箇所では、要素の増減により、表示崩れなどが発生しないようにしてください。
-- グリッド表示を行う場合、横1列、縦1列ごとに div で囲むような入れ子処理はせずに、そのブロック全体で div を囲むようにしてください。
-- 必ず繰り返した状態でコーディングしてください
-- 必要であれば、要素が全くない状態を考慮してください。場合によっては別のコーディングを出力する必要がある場合があります。カスタマイズで対応できるので、事前に concrete5 実装者と可能かどうか相談してください。
-    - 例：0個の時、トルツメにするのか別の表示にするのか
-    - 例：1個のとき、 スライドショーで自動再生をするが、画像が1個しかないとき自動再生があるため同じ画像でエフェクトが繰り返されてしまう場合の対処
-
-## 繰り返し要素のサイズの考慮
-
-- グリットデザインなど縦の位置を他の要素と合わせないといけない場合は、できれば JS などで縦の高さを調整するように設定してください。
-- 不可能であれば横1列ごとに1つのブロックを追加するように対処するので運用を検討してください。
-- 例：ページリストで、サムネイル画像、日付、ページタイトルの3要素が横に並んでいる場合、サムネイル画像がなかった時、表示崩れが起きてしまう。
+* In concrete5.6.x z-index must be set less than 5
 
 
-## テキストの増減への対応
+## Don't do anything to depends on file upload location (Required)
 
-入力文字数が増減することを想定して、表示崩れが起きないようにしてください。
+Don't code anything that rely on uploading the images to the same directory where a concrete5 editor can freely edit and change.
 
-- 例：画像の回り込みの増減で、少ない時に clearfix がないため、次の要素とかぶる
-- 例：ページリストで、サムネイル画像、日付、ページタイトルの3要素が横に並んでいる場合、ページタイトルが2行になる時に、表示崩れが起きてしまう。
+- In concrete5, images and other assets are uploaded onto the directory which are randomly generated.
+- For example, you won't be able to execute auto mouse over image effects by adding `_over` postfix to the file name. (unless the image assets are stored in theme folder and the image filename are hard-coded.)
 
 
-# 奨励事項
+## Don't add ID to blocks (Strongly Recommended)
 
-## ブロックのコーディングが、ブロック単位でデザインが再現し、できるだけ汎用的になるようにしてください
+Try to avoid any coding that uses ID.
+
+## Meta title, description, keywords, OGP tag is not needed (Recommended)
+
+Meta Tilte, Description, Keywords, OGP tags will be inserted. It's not necessary to implement for HTML coding
+
+
+# Conding Requirement
+
+## Provide ALL patterns of blocks
+
+- Based on the spec and design data, provide all design patterns of coding.
+- Example: Left aliened, center, and right aliened image.
+
+## Provide the patterns when the text, image and/or data is empty
+
+- Consider the coding when elements are empty.
+- Example: When thumbnail image of Page List is not present, the position, margin and padding of page title won't be messed up and etx.
+
+## Consider the Pattern of Repeated Element
+
+- When showing the repeating elementsm, don't break the design layout by increasing and decreasing the number of elements.
+- When showing the grid style elements, don't messed up the layout by increasing and decreasing the number of elements.
+- When showing the grid style coding, don't wrap the elements by each row but entire section of the block.
+- Make sure to provide coding with repeating elements of various patterns.
+- If necessary, provide the coding when elements are empty or 1 entries when multiple entries are expected.
+    - Example: When there is no result in Page List block, do you want to show other stuff or simply blank?
+    - Example: When a slideshow block only has one image, do you still want to display pagination interface or transition effects?
+
+## Consider the Size of Repeated Elements
+
+- When coding grid content and must match the height of each elements, provide JavaScript to adjust the height of each element
+- If JavaScript option is not available, consider to create a block that has one (1) row. And if you want to have multiple rows, add more blocks.
+- Exmaple: There is a grid design Page List with thumbnail, date and page title elements. Whem the legth of page title differ, the height of each block differs and mess up the layout.
+
+
+## Consider the Volume of Text
+
+Consider the patterns when text is shorter and longer than expected.
+
+- Example: When you have a aligned image + text block without proper clearfix, the layout could messed up when you have shorter text.
+- Exmaple: There is a Page List block with thumbnail, date and title. If the page title become two-lines, it could messed up the layout.
+
+
+# Coding Recommendation
+
+## Try to make the block coding as generic as possible so that it can be used for other pages
 
 - ブロックはエリアに自由に配置できます (上級権限モードなどで制限は可能)
 - そのエリアだけにしか使えないようにするなど、特定の場合を除く、ブロック外の class から継承するようなことは避けてください。
@@ -333,32 +336,35 @@ concrete5 側で挿入するため、不要です。
 https://app.codegrid.net/entry/bem-basic-1
 
 
-## LESS の使用
+## Use of LESS
 
 concrete5.7.x では、LESS のコンパイラーを内蔵しています。
 HTMLコーディングを確認する際は、コンパイルが必要ですが、concrete5 ではコンパイルが必要ありません。
 
 CSS プリプロセッサーを使用する際は LESS を採用されることをおすすめしますが、必須ではありません。
 
-# 各ブロックのコーディング仕様
+# Coding Guideline for Each Block
 
-## 記事ブロック
+## Content
 
-記事ブロックは Redactor という JS ライブラリを使用して、下記記事ブロックサンプルのコードを出力するようにできています。 class や ID なしの HTML タグが出力されるため、きちんと CSS を出力するために、下記の2パターンで対応して頂く必要があります。
+Content block uses Redactor JS library, and print out the following coding. It print out the code without class and ID. You may want to adjust your CSS by the following two patterns.
 
-### デフォルト
+### Default
 
-囲む div など何もなしで挿入されます。
-その場合は、エリアの前後に class を囲むなどして、CSS の適用がきちんとされるよう調整することをおすすめします。
+Content block won't wrap any div.
 
-### 推奨：
+You may want to wrap the certain div in Area.
 
-記事ブロックは一つのブロック全体を `<div class="wysiwyg"></div>` で囲むようにして中身のタグはなにも class を指定しないようにしてください。この場合、記事ブロックのオーバーライドのカスタマイズが必要になります。（追加費用？）
+### Recommended
 
-どうしても指定が必要な場合や `<span>` を間に挟まないといけないような場合は、更新者がコーディングの知識をある程度持ち合わせている場合か、一定の法則があれば JS で対応するようにしてください。
+Make each Content block wrap with `<div class="wysiwyg"></div>`. In this case, you must override Content Block.
 
-下記が、記事ブロックから排出した HTML コーディングのサンプルです。
-下記のコードを参考に CSS の調整をしてください。
+You should try to avoid the situation that a concrete5 user has to manually type CSS class or ID by going into code view of Content Block. If there is a certain pattern such as adding additional `<span>` tag to H tags, consider making a custom JS.
+
+
+The following is the sample HTML coding of Content Block.
+
+You should make CSS based on the following sample. Or we recommend to create the sample pattern by yourself by making a actual content block in concrete5, and provide those coding to the coder to adjust CSS>
 
 
 ``` 記事ブロックサンプル.html
@@ -466,22 +472,22 @@ CSS プリプロセッサーを使用する際は LESS を採用されること�
 </div>
 ```
 
-## HTMLブロック
+## HTML Block
 
-### デフォルトでの使用
+### Default
 
-HTML ブロックはデフォルトでは
+By default, HTML Block is wrapped with the following div
 
 `<div id="HTMLBlockXXX" class="HTMLBlock">`
 
-という、ブロックの識別数字がついた ID と HTMLBlock という Class を div で囲って表示します。
+XXX is block ID.
 
-### 推奨方法
+### Recommended
 
-HTML ブロックは、そのまま生のコードを出力したい場合が多いため、
-HTML ブロックのデフォルトの view をオーバーライドして、1個1個の HTML ブロックに div が囲まれないようにするのも良いです。
+Sometime, you don't want those HTMLBlock class or ID. Therefore, you may want to override HTML Block not to output div tag.
 
-## オートナビ
+
+## Autonav
 
 ul li で構成するナビゲーションブロックです。
 
@@ -493,7 +499,7 @@ ul li で構成するナビゲーションブロックです。
 div などを新たに囲む必要がある場合なども可能
 ただし、閉じタグなどのパターンを考えるときに複雑になりかねないので、ul li のみで構成できるように極力努力する。
 
-## ページリスト
+## Page List
 
 表示できる要素
 
@@ -509,7 +515,7 @@ div などを新たに囲む必要がある場合なども可能
 ページ送りについては、特定のコーディングで対応することが必要 ( **準備中** )
 
 
-## イメージスライダー
+## Image Slider
 
 表示できる要素
 
@@ -523,25 +529,29 @@ JS ライブラリを使う場合は、concrete5 標準JSライブラリとコ�
 
 ブロック内でサムネイル画像一覧を表示し、画像のページ送りなどを行う場合は、ブロック側ではサムネイル画像を全部表示し、画像送り部分は JS で処理する。
 
-## FAQ ブロック
+## FAQ Block
 
 要素(作成中)
 
 - タイトル(テキストのみ)
 - WYSIWYG (記事ブロックと同じ)
 
-## ページタイトルブロック
+## Page Title
 
-作成中
+Working / help wanted
 
-## 属性ブロック
+## Page Attribute
 
-作成中
+Working / help wanted
 
-## YouTube ブロック
+## YouTube
 
-作成中
+Working / help wanted
 
-## Google Map ブロック
+## Google Map
 
-作成中
+Working / help wanted
+
+## Form Block
+
+Working / help wanted
