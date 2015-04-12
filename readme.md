@@ -60,7 +60,7 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
 
 Use this guideline "as is". We hold no responsibility against any damages caused by this guideline.
 
-By using this guideline, you have agreed that concrete5 Japan, Inc and its affiliate holds no responsibility or liability against any damages caused by using this guideline.
+By using this guideline, you have agreed that concrete5 Japan, Inc and its affiliate hold no responsibility or liability against any damages caused by using this guideline.
 
 ## Disclaimer
 
