@@ -228,7 +228,7 @@ When using Foundation, you may need to be careful. But you don't get affected by
 
 Don't add ID and class to body tag.
 
-#### body に Position を設定しない (Required)
+#### Don't apply Position to body (Required)
 
 Don't add position to body.
 
@@ -365,8 +365,8 @@ The following is the sample HTML coding of Content Block.
 You should make CSS based on the following sample. Or we recommend to create the sample pattern by yourself by making a actual content block in concrete5, and provide those coding to the coder to adjust CSS>
 
 
-``` 記事ブロックサンプル.html
-<div class="wysiwig"> <!-- この div タグは concrete5 標準ではありませんがコンクリートファイブジャパンが推奨する方法です。記事ブロックをオーバーライドする必要があります。-->
+``` Content Block Sample.html
+<div class="wysiwig"> <!-- This div tag is not generated via concrete5 default content block, but concrete5 Japan, Inc recommend this way. In order to achieve this, you must override Content Block. -->
     <p>P</p>
 
     <h1>H1</h1>
@@ -467,7 +467,7 @@ You should make CSS based on the following sample. Or we recommend to create the
     <hr>
 
     <p><span style="color: rgb(192, 80, 77);">Font color</span></p>
-</div>
+</div><!-- This div tag is not generated via concrete5 default content block, but concrete5 Japan, Inc recommend this way. In order to achieve this, you must override Content Block. -->
 ```
 
 ## HTML Block
