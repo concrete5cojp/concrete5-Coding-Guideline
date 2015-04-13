@@ -35,7 +35,7 @@ This guideline was made for front-end engineer who is creating an original concr
 
 concrete5 is front-end flexible CMS. But it also means that it be could easily resulted in CSS and/or JS conflict between site's CSS and interface UI..
 
-This coding guideline is made to help you avoid the conflict for concrete5 Japan, Inc. partners.
+This coding guideline is made to help avoid the conflict for concrete5 Japan, Inc. partners.
 
 concrete5 Japan, Inc. is helping various company's concrete5 project. Please feel free to contact us at any time for your project needs. We can work internationally.
 
