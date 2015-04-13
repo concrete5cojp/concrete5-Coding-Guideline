@@ -119,7 +119,7 @@ p2_2 Product Detail | p2_1_product_detail
 
 These page type handles are used for Body Wrapper Class in concrete5. So we recommend that you determine the following Page Type list before start coding.
 
-Name | Hangle | Page Template used
+Name | Handle | Page Template used
 --- | --- | ---
 pt0_0 Home | pt0_0_top | p0_0_top
 pt0_1_1 A Deaprtment Top | pt0_0_1_top_XX_dept | p0_0_top_dept
