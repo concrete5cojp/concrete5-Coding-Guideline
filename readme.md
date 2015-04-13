@@ -236,7 +236,7 @@ When using Foundation, you may need to be careful. But you don't get affected by
 
 
 
-# Naming CSS
+# CSS Coding Guideline
 
 ## Do-nots & Cautions
 
