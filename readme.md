@@ -383,7 +383,7 @@ The following is the sample HTML coding of Content Block.
 You should make CSS based on the following sample. Or we recommend to create the sample pattern by yourself by making a actual content block in concrete5, and provide those coding to the coder to adjust CSS>
 
 
-```
+```html
 <div class="wysiwig"> <!-- This div tag is not generated via concrete5 default content block, but concrete5 Japan, Inc recommend this way. In order to achieve this, you must override Content Block. -->
     <p>P</p>
 
