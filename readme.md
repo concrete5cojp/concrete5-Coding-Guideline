@@ -3,7 +3,7 @@
 Switch branch for different language and versions.
 
 - concrete5.7.3.1 and later
-- On 2015/4/13
+- Updated on 2015/4/21
 - Authored by Katz Ueno (concrete5 Japan, Inc.)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -73,6 +73,7 @@ Please use this guideline "as is". We hold no responsibility against any damages
 ## Credit
 
 - Katz Ueno (concrete5 Japan, Inc) - http://concrete5.co.jp
+- Remo Laubacher (Ortic Solutions GmbH) - http://www.ortic.com
 
 
 # Example: Basic Specification
