@@ -570,7 +570,7 @@ Please wrap with `<ul class="pagination">`.
 `<li class="prev"><a href="#">&larr; Previous</a></li>`
 
 - Use `prev` class
-- If there is no link, add `disable` class (Or you could simply choose not to display)
+- If there is no link, add `disable` class (If you don't want to display the previous link when it's not linked, please adjust CSS by using these classes.)
 - Add `<span></span>`
 - The text `&larr; Previous` can be configurable to any text
 
@@ -592,7 +592,7 @@ When displaying the page that you're currenltly viewing
 
 - active class added to the list tag
 - wrap with span
-- `<span class="sr-only">（このページ）</span>` is sample coding if you want to add additional coding for the current page. You could simply choose to leave ie blank.
+- `<span class="sr-only">(current)</span>` is sample coding if you want to add additional coding for the current page. You could simply choose to leave ie blank.
 
 #### 6. Numbering: Skip
 
@@ -609,7 +609,7 @@ When displaying the page that you're currenltly viewing
 
 - list tag
 - with next class
-- If there is no link, disabled class can be added. You have an option not to show "Next" at all/
+- If there is no link, disabled class is added. (If you don't want to display the previous link when it's not linked, please adjust CSS by using these classes.)
 - "Next &rarr;" is default text. But it can be configurable,
 
 
