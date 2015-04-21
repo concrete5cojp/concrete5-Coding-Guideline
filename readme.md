@@ -67,6 +67,7 @@ concrete5 はフロントのページ上で編集可能な CMS です。
 ## クレジット
 
 - Katz Ueno (concrete5 Japan, Inc) - http://concrete5.co.jp
+- Remo Laubacher (Ortic Solutions GmbH) - http://www.ortic.com
 
 
 
