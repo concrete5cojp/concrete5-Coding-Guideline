@@ -430,7 +430,7 @@ You should make CSS based on the following sample. Or we recommend to create the
 
     <p>Image</p>
 
-    <p><img src="http://sakan.concrete5japan.net/index.php/download_file/view_inline/13"></p>
+    <p><img src="/index.php/download_file/view_inline/1"></p>
 
     <p>Align Left</p>
 
