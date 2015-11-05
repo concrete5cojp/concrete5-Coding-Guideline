@@ -188,31 +188,33 @@ HTML コーディングもモックアップなどは
 
 **特に jQuery は concrete5 と密接に関わり合っているので、競合する JavaScript を利用する際は、最新の注意を払ってください。**
 
-ライブラリ名 |c5.6.3.3| c5.7.3.1
+ライブラリ名 |c5.6.3.3| c5.7.3.1 | c5.7.5.2
 ----- |---- | -----
-ace | TBA | TBA
-backstretch | TBA | TBA
-bootstrap | 2.0.3 | 3.1.1
-dropzone | N/A |
-dynatree | N/A |
-font-awesome | N/A  |
-jquery | 1.7.2 | 1.11.1
-jquery/fileupload |  |
-jquery/form |  |
-jquery/awesome-rating | N/A | TBA
-jquery/ui | TBA | 1.10.3
-jquery/visualize | N/A | TBA
-jquery/touch-punch | N/A | TBA
-kinetic | N/A | TBA
-picturefill | N/A | TBA
-redactor | N/A | TBA
-select2 | N/A | TBA
-select2_locale | N/A | TBA
-underscore | N/A | TBA
-select2 | N/A | TBA
-spectrum | N/A | TBA
-swfobject | N/A | TBA
-TinyMCE | 3.5.11 | N/A
+ace | TBA | TBA | TBA
+backstretch | TBA | TBA | 2012
+bootstrap | 2.0.3 | 3.1.1 | 3.1.1
+dropzone | N/A | N/A | N/A
+dynatree | N/A | N/A | N/A
+font-awesome | N/A  | N/A  | 4.2.0
+html5shiv | N/A  | N/A | 3.7.2
+jquery | 1.7.2 | 1.11.1 | 1.11.3
+jquery/cookie |  N/A | N/A | N/A
+jquery/fileupload |  N/A | N/A | 5.39.0
+jquery/form |  N/A | N/A | 2.8.7
+jquery/awesome-rating | N/A | N/A  | 0.1.1
+jquery/ui | TBA | 1.10.3 | 1.11.4
+jquery/visualize | N/A | N/A | N/A
+jquery/touch-punch | N/A | TBA | 0.2.3
+kinetic | N/A | TBA | 4.7.2
+Modernizr | N/A | N/A  | 2.8.3
+picturefill | N/A | TBA | 1.11.4
+redactor | N/A | TBA | 10.2.1
+select2 | N/A | TBA | 3.5.1
+select2_locale | N/A | TBA | N/A
+spectrum | N/A | TBA | N/A
+swfobject | N/A | TBA | N/A
+TinyMCE | 3.5.11 | N/A | N/A
+underscore | N/A | TBA | 1.6.0
 
 # CSS/JS フレームワーク
 
