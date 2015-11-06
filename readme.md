@@ -3,7 +3,7 @@
 Switch branch for different language and versions.
 
 - concrete5.7.3.1 and later
-- Updated on 2015/4/21
+- Updated on 2015/11/6
 - Authored by Katz Ueno (concrete5 Japan, Inc.)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
