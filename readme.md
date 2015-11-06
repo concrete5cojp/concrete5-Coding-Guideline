@@ -197,7 +197,7 @@ If you plan to use the same libraries, you should try to use the same version of
 
 Library Name |c5.6.3.3| c5.7.3.1 | c5.7.5.2
 ----- |---- | -----
-ace | TBA | TBA | TBA
+ace | N/A | TBA | TBA
 backstretch | TBA | TBA | 2012
 bootstrap | 2.0.3 | 3.1.1 | 3.1.1
 dropzone | N/A | TBA | TBA
