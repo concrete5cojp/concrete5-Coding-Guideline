@@ -4,7 +4,7 @@ Switch branch for different language and versions.
 
 - コーディングガイドライン (5.7.x 以降)
 - concrete5.7.3.1 対応
-- 更新 2015/4/21
+- 更新 2015/11/6
 - Authored by Katz Ueno (コンクリートファイブジャパン株式会社)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
