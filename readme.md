@@ -95,7 +95,7 @@ Please indicate which libraries you are planning to use
 Libraries | Version
 ---- | ---
 Bootstrap | 3.1.1
-jQuery | 1.11.1
+jQuery | 1.11.3
 Bxslider | TBA
 
 
@@ -166,15 +166,15 @@ The above locations are for your own theme. If you want to make your theme as 'p
 
 Images, CSS and JS assets should be saved onto the following locations. (These are files that are fixed onto the theme only.)
 
-- /application/XXX/css/
-- /application/XXX/js/
-- /application/XXX/images/
+- /application/themes/XXX/css/
+- /application/themes/XXX/js/
+- /application/themes/XXX/images/
 
 or
 
-- /application/XXX/assets/css/
-- /application/XXX/assets/js/
-- /application/XXX/assets/images/
+- /application/themes/XXX/assets/css/
+- /application/themes/XXX/assets/js/
+- /application/themes/XXX/assets/images/
 
 
 
@@ -182,7 +182,7 @@ or
 
 We recommend you to save HTML mock ups under:
 
-- /application/XXX/html/
+- /application/themes/XXX/html/
 
 Please refer the same CSS, JS and images files that used for concrete5 themes files, so that it would be easier to debug.
 
