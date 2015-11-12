@@ -3,8 +3,8 @@
 Switch branch for different language and versions.
 
 - コーディングガイドライン (5.7.x 以降)
-- concrete5.7.3.1 対応
-- 更新 2015/11/6
+- concrete5.7.5.2 対応
+- 更新 2015/11/12
 - Authored by Katz Ueno (コンクリートファイブジャパン株式会社)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -159,15 +159,15 @@ concrete5.7.x | /application/themes/XXX
 
 コーディングを行う時点で、テーマに埋め込む CSS や JS 画像ファイルは
 
-- /application/XXX/css/
-- /application/XXX/js/
-- /application/XXX/images/
+- /application/themes/XXX/css/
+- /application/themes/XXX/js/
+- /application/themes/XXX/images/
 
 や
 
-- /application/XXX/assets/css/
-- /application/XXX/assets/js/
-- /application/XXX/assets/images/
+- /application/themes/XXX/assets/css/
+- /application/themes/XXX/assets/js/
+- /application/themes/XXX/assets/images/
 
 などとまとめられることを推奨します。
 
@@ -176,7 +176,7 @@ concrete5.7.x | /application/themes/XXX
 
 HTML コーディングもモックアップなどは
 
-- /application/XXX/html/
+- /application/themes/XXX/html/
 
 配下に設置し、同じ、css, js, 画像ファイルを読み込むように設定するとデバッグが用意になります。
 
