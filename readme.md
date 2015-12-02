@@ -4,7 +4,7 @@ Switch branch for different language and versions.
 
 - コーディングガイドライン (5.7.x 以降)
 - concrete5.7.5.2 対応
-- 更新 2015/11/12
+- 更新 2015/12/2
 - Authored by Katz Ueno (コンクリートファイブジャパン株式会社)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -451,11 +451,14 @@ CSS プリプロセッサーを使用する際は LESS を採用されること�
             </tr>
 
             <tr>
-                <td>1</td>
+                <td><p>セルの中に複数行のテキストを入れると</p>
+                <p>このように p タグが入ります。</p></td>
 
-                <td>2</td>
+                <td><p>セルの中に複数行のテキストを入れると</p>
+                <p>このように p タグが入ります。</p></td>
 
-                <td>3</td>
+                <td><p>セルの中に複数行のテキストを入れると</p>
+                <p>このように p タグが入ります。</p></td>
             </tr>
         </tbody>
     </table>
@@ -622,6 +625,20 @@ Boostrap 3 ベースでの出力サンプルです。
 JS ライブラリを使う場合は、concrete5 標準JSライブラリとコンフリクトを起こさないようにする。
 
 ブロック内でサムネイル画像一覧を表示し、画像のページ送りなどを行う場合は、ブロック側ではサムネイル画像を全部表示し、画像送り部分は JS で処理する。(例: http://memocarilog.info/memocarilog-demo/galleriffic-demo/ )
+
+## 画像ブロック
+
+デフォルトでは下記のようなコードが出力されます。
+
+```html
+<picture>
+    <!--[if IE 9]><video style='display: none;'><![endif]--><!--[if IE 9]></video><![endif]-->
+    <img src="/index.php/download_file/view_inline/1" alt="#" class="ccm-image-block img-responsive bID-XXXX">
+</picture>
+```
+
+* 'bID-XXXX' のところはブロックIDが入ります。
+
 
 ## FAQ ブロック
 
