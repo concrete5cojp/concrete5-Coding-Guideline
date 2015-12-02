@@ -3,7 +3,7 @@
 Switch branch for different language and versions.
 
 - concrete5.7.3.1 and later
-- Updated on 2015/11/6
+- Updated on 2015/12/2
 - Authored by Katz Ueno (concrete5 Japan, Inc.)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -464,11 +464,14 @@ You should make CSS based on the following sample. Or we recommend to create the
             </tr>
 
             <tr>
-                <td>1</td>
+                <td><p>Paragraph tag may get inserted upon certain situation</p>
+                <p>When you happened to have the multiple lines text within a cell like this.</p></td>
 
-                <td>2</td>
+                <td><p>Paragraph tag may get inserted upon certain situation</p>
+                <p>When you happened to have the multiple lines text within a cell like this.</p></td>
 
-                <td>3</td>
+                <td><p>Paragraph tag may get inserted upon certain situation</p>
+                <p>When you happened to have the multiple lines text within a cell like this.</p></td>
             </tr>
         </tbody>
     </table>
@@ -632,6 +635,18 @@ If you want to use any particular slideshow JS library, make sure it won't cause
 
 If you want to create a image slideshow that has a thumbnail navigation, you must print out all thumbnail images in HTML, then use JS to create thumbnail navigation.
 Example: http://memocarilog.info/memocarilog-demo/galleriffic-demo/
+
+## Image Block
+
+```html
+<picture>
+    <!--[if IE 9]><video style='display: none;'><![endif]--><!--[if IE 9]></video><![endif]-->
+    <img src="/index.php/download_file/view_inline/1" alt="#" class="ccm-image-block img-responsive bID-XXXX">
+</picture>
+```
+
+* 'bID-XXXX' will have its bID.
+
 
 ## FAQ Block
 
