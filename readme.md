@@ -318,7 +318,7 @@ Try to avoid any coding that uses ID.
 
 ## Meta title, description, keywords, OGP tag is not needed (Recommended)
 
-Meta Tilte, Description, Keywords, OGP tags will be inserted. It's not necessary to implement for HTML coding
+Meta Tilte, Description, Keywords, OGP tags will be inserted. It's not necessary to implement for HTML coding.
 
 
 # Coding Requirement
@@ -357,6 +357,27 @@ Consider the patterns when text is shorter and longer than expected.
 - Example: When you have a aligned image + text block without proper clearfix, the layout could messed up when you have shorter text.
 - Exmaple: There is a Page List block with thumbnail, date and title. If the page title become two-lines, it could messed up the layout.
 
+## Consider Edit Bar on top when you have fixed navigation or anchor link
+
+When a user with edit permission comes to concrete5 site, concrete5 will place 49px height edit bar on top. **This may cause some inconvenience to the editor.** She or he may not be able to see the global navigation or the anchor link will be right behind the edit bar.
+
+Therefore, you may want to prepare the special CSS and JS code that will ONLY be inserted when the user see the edit bar.
+
+SAMPLE
+
+```
+<?php $cp = new Permissions($c); if($cp->canViewToolbar()){?>
+    <style media="screen">
+        .header {top:48px;}
+        /* Other CSS Style */
+    </style>
+
+    <script type="text/javascript">
+        /* Additional setting such as smooth scrolling */
+    </script>
+    
+<?php } ?>
+```
 
 # Coding Recommendation
 
