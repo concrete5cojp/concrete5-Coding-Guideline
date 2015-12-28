@@ -219,7 +219,7 @@ picturefill | N/A | TBA | 2.3.1 | 2.3.1
 redactor | N/A | TBA | 10.2.1 | 10.2.1
 select2 | N/A | TBA | 3.5.1 | 3.5.1
 spectrum | N/A | TBA | TBA | 1.3.4
-swfobject | N/A | TBA | TBA
+swfobject | N/A | TBA | TBA | TBA
 TinyMCE | 3.5.11 | N/A | N/A | N/A
 underscore | N/A | TBA | 1.6.0 | 1.6.0
 
