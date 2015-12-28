@@ -3,8 +3,8 @@
 Switch branch for different language and versions.
 
 - コーディングガイドライン (5.7.x 以降)
-- concrete5.7.5.2 対応
-- 更新 2015/12/2
+- concrete5.7.5.3 対応
+- 更新 2015/12/28
 - Authored by Katz Ueno (コンクリートファイブジャパン株式会社)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -190,34 +190,48 @@ HTML コーディングもモックアップなどは
 
 ライブラリ名 |c5.6.3.3| c5.7.3.1 | c5.7.5.2
 ----- |---- | -----| -----
-ace | N/A | TBA | TBA
-backstretch | TBA | TBA | 2012
+ace | N/A | 1.1.8 | 1.2.0 | 1.2.2
+backstretch | TBA | 2.0.4 | 2.0.4 | 2.0.4
 bootstrap | 2.0.3 | 3.1.1 | 3.1.1
-dropzone | N/A | TBA | TBA
-dynatree | N/A | TBA | TBA
-font-awesome | N/A  | TBA  | 4.2.0
-html5shiv | N/A  | N/A | 3.7.2
-jquery | 1.7.2 | 1.11.1 | 1.11.3
-jquery/cookie |  N/A | TBA | TBA
-jquery/fileupload |  N/A | TBA | 5.39.0
-jquery/form |  N/A | TBA | 2.8.7
-jquery/awesome-rating | N/A | TBA  | 0.1.1
-jquery/ui | TBA | 1.10.3 | 1.11.4
-jquery/visualize | N/A | TBA | TBA
-jquery/touch-punch | N/A | TBA | 0.2.3
-kinetic | N/A | TBA | 4.7.2
-Modernizr | N/A | TBA  | 2.8.3
-picturefill | N/A | TBA | 1.11.4
-redactor | N/A | TBA | 10.2.1
-select2 | N/A | TBA | 3.5.1
-select2_locale | N/A | TBA | TBA
-spectrum | N/A | TBA | TBA
+dropzone | N/A | 4.0.1 | 4.1.0 | 4.2.0
+dynatree | N/A | 1.2.6 | 1.2.8 | 1.2.8
+font-awesome | N/A  | TBA  | 4.2.0 | 4.2.0
+html5shiv | N/A  | N/A | 3.7.2 | 3.7.2
+respond | N/A  | N/A | 1.4.2 | 1.4.2
+jquery | 1.7.2 | 1.11.1 | 1.11.3 | 1.11.3
+jquery/awesome-rating | N/A | TBA  | 0.1.1 | 0.1.1
+jquery/cookie |  N/A | 1.4.1 | 1.4.1 | 1.4.1
+jquery/fileupload |  N/A | TBA | 5.39.0 | 5.39.0
+jquery/form |  N/A | TBA | 2.87 | 2.87
+jquery/live-update |  N/A | TBA | TBA | TBA
+jquery/magnetic-pop-up |  N/A | TBA | TBA | 1.0.0
+jquery/mousewheel |  N/A | TBA | TBA | 3.1.12
+jquery/pep |  N/A | TBA | TBA | TBA
+jquery/placeholder |  N/A | TBA | TBA | 2.0.8
+jquery/tristate |  N/A | TBA | TBA | TBA
+jquery/touch-punch | N/A | TBA | 0.2.3 | 0.2.3
+jquery/ui | TBA | 1.10.3 | 1.11.4 | 1.11.4
+jquery/visualize | N/A | TBA | TBA | TBA
+kinetic | N/A | TBA | 4.7.2 | 4.7.2
+Modernizr | N/A | TBA  | 2.8.3 | 2.8.3
+packery | N/A | TBA | TBA | 1.0.2
+picturefill | N/A | TBA | 2.3.1 | 2.3.1
+redactor | N/A | TBA | 10.2.1 | 10.2.1
+select2 | N/A | TBA | 3.5.1 | 3.5.1
+spectrum | N/A | TBA | TBA | 1.3.4
 swfobject | N/A | TBA | TBA
-TinyMCE | 3.5.11 | N/A | N/A
-underscore | N/A | TBA | 1.6.0
+TinyMCE | 3.5.11 | N/A | N/A | N/A
+underscore | N/A | TBA | 1.6.0 | 1.6.0
 
 - N/A: そのバージョンの concrete5 パッケージに入っていないライブラリ
 - TBA: バージョン番号を調査中、もしくは不明
+
+これらのライブラリをテーマで使用したり、使用しない場合 concrete5 の実装時に設定する必要があります。設定は下記のドキュメントを参考にしてください。
+
+- [コアのJavascriptとCSSをテーマで使用する](http://concrete5-japan.org/help/5-7/developer/designing-for-concrete5/advanced-css-and-javascript-usage/requiring-core-javascript-or-css-in-a-theme/)
+- [コアのJavascriptやCSSをテーマから上書きする](http://concrete5-japan.org/help/5-7/developer/designing-for-concrete5/advanced-css-and-javascript-usage/overriding-or-providing-core-javascript-or-css-in-a-theme/)
+- [elementalのpage_theme.php](http://acliss.secret.jp/private-blog/acliss-blog/2015/12/12/elemental%E3%81%AEpage_theme/)
+
 
 # CSS/JS フレームワーク
 
@@ -531,6 +545,8 @@ ul のレベルに応じて、div や span などを新たに囲むことも可�
 ページ送りについては、特定のコーディングで対応することが必要。
 ただしカスタマイズにより自由度の高いページ送りのコーディングが可能です。
 
+#### デフォルトで出力されるページネーションのサンプルについて
+
 下記サンプルコードです。 ul li を使用します。
 
 ```html
@@ -553,15 +569,15 @@ ul のレベルに応じて、div や span などを新たに囲むことも可�
 
 Boostrap 3 ベースでの出力サンプルです。
 
-#### 1. div wrapper
+##### 1. div wrapper
 
 `<div class="ccm-pagination-wrapper">` で囲ってください。
 
-#### 2. ul
+##### 2. ul
 
 `<ul class="pagination">` で囲ってください。
 
-#### 3. 「前へ」
+##### 3. 「前へ」
 
 前へリンクは
 
@@ -572,7 +588,7 @@ Boostrap 3 ベースでの出力サンプルです。
 - 「`<span></span>`」が付きます。
 - 「`&larr; 前へ`」の部分は変更可能です
 
-#### 4. ページ番号部分部分：基本形
+##### 4. ページ番号部分部分：基本形
 
 `<li><a href="#">7</a></li>`
 
@@ -583,7 +599,7 @@ Boostrap 3 ベースでの出力サンプルです。
 です
 
 
-#### 5. ページ番号部分部分：そのページの場合
+##### 5. ページ番号部分部分：そのページの場合
 
 基本形
 
@@ -593,7 +609,7 @@ Boostrap 3 ベースでの出力サンプルです。
 - span タグを間にはさみます
 - 「`<span class="sr-only">（このページ）</span>`」はデフォルトの表記です。現ページであることを示すための任意コーディングを挿入できます。なにもなしでも可能です。
 
-#### 6. ページ番号部分部分：省略しているところ
+##### 6. ページ番号部分部分：省略しているところ
 
 
 `<li class="disabled"><span>&hellip;</span></li>`
@@ -602,7 +618,7 @@ Boostrap 3 ベースでの出力サンプルです。
 - `<span>&hellip;</span>` で「・・・」を表示しています
 
 
-#### 7. 「次へ」
+##### 7. 「次へ」
 
 `<li class="next"><a href="#">次へ &rarr;</a></li>`
 
@@ -610,6 +626,47 @@ Boostrap 3 ベースでの出力サンプルです。
 - next クラスが付きます
 - リンクがないときは disabled などクラスをつけます。(表示しないという設定の場合は CSS で調整ください)
 - 「`次へ &rarr;`」がデフォルトですが、変更が可能です。
+
+#### CSS ファイルについて
+
+ページリストブロックは、ページネーションが追加されると自動的に下記のファイルを読み込みます。
+
+/concrete/css/frontend/pagination.css
+
+しかし、自分でページネーションの CSS を作成したい場合は、concrete5 実装時に下記のいずれかの方法で解除してください。
+
+**1. page_theme.php で読み込まないように設定する**
+
+例
+
+```
+<?php
+public function registerAssets() {
+    $this->providesAsset('css', 'core/frontend/pagination');
+}
+```
+
+page_theme.php の registerAssets() に上記の1行を追加するとOKです。
+
+**2. /concrete/css/frontend/pagination.css を上書きする**
+
+`/application/css/frontend/pagination.css` という CSS ファイルを作成し、
+ページネーション関連の CSS はそちらに記入するようにすることが可能です。
+
+**3. /concrete/blocks/page_list/controller.php を上書きする**
+
+あまりおすすめしませんが、上記ファイルを /application/blocks/page_list/controller.php にコピーし、
+
+`$this->requireAsset('css', 'core/frontend/pagination');`
+
+という行を削除かコメントアウトしてください。
+
+#### ページネーションの出力自体をカスタマイズする方法
+
+ページネーションの出力コーディングを変更したい場合は、下記を参照してください。
+
+ - [ページリストブロックのページ送りのカスタマイズ](http://concrete5-japan.org/help/5-7/recipes/customize-pagination/)
+
 
 
 ## イメージスライダー
