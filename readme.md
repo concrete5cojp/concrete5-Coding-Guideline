@@ -3,7 +3,8 @@
 Switch branch for different language and versions.
 
 - concrete5.7.3.1 and later
-- Updated on 2015/12/2
+- Up to concrete5.7.5.3
+- Updated on 2015/12/28
 - Authored by Katz Ueno (concrete5 Japan, Inc.)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -195,36 +196,49 @@ If you plan to use the same libraries, you should try to use the same version of
 
 **Especially, you should use same version of jQuery that concrete5 use**
 
-Library Name |c5.6.3.3| c5.7.3.1 | c5.7.5.2
+Library Name |c5.6.3.3| c5.7.3.1 | c5.7.5.2 | c5.7.5.3
 ----- |---- | -----| -----
-ace | N/A | TBA | TBA
-backstretch | TBA | TBA | 2012
+ace | N/A | 1.1.8 | 1.2.0 | 1.2.2
+backstretch | TBA | 2.0.4 | 2.0.4 | 2.0.4
 bootstrap | 2.0.3 | 3.1.1 | 3.1.1
-dropzone | N/A | TBA | TBA
-dynatree | N/A | TBA | TBA
-font-awesome | N/A  | TBA  | 4.2.0
-html5shiv | N/A  | N/A | 3.7.2
-jquery | 1.7.2 | 1.11.1 | 1.11.3
-jquery/cookie |  N/A | TBA | TBA
-jquery/fileupload |  N/A | TBA | 5.39.0
-jquery/form |  N/A | TBA | 2.8.7
-jquery/awesome-rating | N/A | TBA  | 0.1.1
-jquery/ui | TBA | 1.10.3 | 1.11.4
-jquery/visualize | N/A | TBA | TBA
-jquery/touch-punch | N/A | TBA | 0.2.3
-kinetic | N/A | TBA | 4.7.2
-Modernizr | N/A | TBA  | 2.8.3
-picturefill | N/A | TBA | 1.11.4
-redactor | N/A | TBA | 10.2.1
-select2 | N/A | TBA | 3.5.1
-select2_locale | N/A | TBA | TBA
-spectrum | N/A | TBA | TBA
+dropzone | N/A | 4.0.1 | 4.1.0 | 4.2.0
+dynatree | N/A | 1.2.6 | 1.2.8 | 1.2.8
+font-awesome | N/A  | TBA  | 4.2.0 | 4.2.0
+html5shiv | N/A  | N/A | 3.7.2 | 3.7.2
+respond | N/A  | N/A | 1.4.2 | 1.4.2
+jquery | 1.7.2 | 1.11.1 | 1.11.3 | 1.11.3
+jquery/awesome-rating | N/A | TBA  | 0.1.1 | 0.1.1
+jquery/cookie |  N/A | 1.4.1 | 1.4.1 | 1.4.1
+jquery/fileupload |  N/A | TBA | 5.39.0 | 5.39.0
+jquery/form |  N/A | TBA | 2.87 | 2.87
+jquery/live-update |  N/A | TBA | TBA | TBA
+jquery/magnetic-pop-up |  N/A | TBA | TBA | 1.0.0
+jquery/mousewheel |  N/A | TBA | TBA | 3.1.12
+jquery/pep |  N/A | TBA | TBA | TBA
+jquery/placeholder |  N/A | TBA | TBA | 2.0.8
+jquery/tristate |  N/A | TBA | TBA | TBA
+jquery/touch-punch | N/A | TBA | 0.2.3 | 0.2.3
+jquery/ui | TBA | 1.10.3 | 1.11.4 | 1.11.4
+jquery/visualize | N/A | TBA | TBA | TBA
+kinetic | N/A | TBA | 4.7.2 | 4.7.2
+Modernizr | N/A | TBA  | 2.8.3 | 2.8.3
+packery | N/A | TBA | TBA | 1.0.2
+picturefill | N/A | TBA | 2.3.1 | 2.3.1
+redactor | N/A | TBA | 10.2.1 | 10.2.1
+select2 | N/A | TBA | 3.5.1 | 3.5.1
+spectrum | N/A | TBA | TBA | 1.3.4
 swfobject | N/A | TBA | TBA
-TinyMCE | 3.5.11 | N/A | N/A
-underscore | N/A | TBA | 1.6.0
+TinyMCE | 3.5.11 | N/A | N/A | N/A
+underscore | N/A | TBA | 1.6.0 | 1.6.0
 
 - N/A: not included in the core
 - TBA: To be announced / currently checking its version.
+
+If you want to specify how to load and unload these assets onto your theme, read the concrete5 documentation.
+
+- [Requiring Core JavaScript or CSS in a Theme](http://documentation.concrete5.org/developers/designing-for-concrete5/advanced-css-and-javascript-usage/requiring-core-javascript-or-css-in-a-theme)
+- [Overriding or Providing Core JavaScript or CSS in a Theme](http://documentation.concrete5.org/developers/designing-for-concrete5/advanced-css-and-javascript-usage/overriding-or-providing-core-javascript-or-css-in-a-theme)
+
 
 # CSS/JS Framework
 
@@ -542,6 +556,8 @@ Wrap the entire block with div, and then create the repeatable elements
 
 Although pagination has variety of options, it is recommended to code as the following.
 
+#### Default Code of Pagination
+
 Here is the sample code of pagination.
 
 ```html
@@ -562,15 +578,15 @@ Here is the sample code of pagination.
 
 The sample coding use Bootstrap 3.
 
-#### 1. div wrapper
+###### 1. div wrapper
 
 Please wrap with `<div class="ccm-pagination-wrapper">`
 
-#### 2. ul
+###### 2. ul
 
 Please wrap with `<ul class="pagination">`.
 
-#### 3. "Previous" Link
+###### 3. "Previous" Link
 
 
 **FORMAT**
@@ -582,7 +598,7 @@ Please wrap with `<ul class="pagination">`.
 - Add `<span></span>`
 - The text `&larr; Previous` can be configurable to any text
 
-#### 4. Numbering: Basic
+###### 4. Numbering: Basic
 
 `<li><a href="#">7</a></li>`
 
@@ -592,7 +608,7 @@ Please wrap with `<ul class="pagination">`.
 
 
 
-#### 5. Numbering: Active Page
+###### 5. Numbering: Active Page
 
 When displaying the page that you're currenltly viewing
 
@@ -602,7 +618,7 @@ When displaying the page that you're currenltly viewing
 - wrap with span
 - `<span class="sr-only">(current)</span>` is sample coding if you want to add additional coding for the current page. You could simply choose to leave ie blank.
 
-#### 6. Numbering: Skip
+###### 6. Numbering: Skip
 
 
 `<li class="disabled"><span>&hellip;</span></li>`
@@ -611,7 +627,7 @@ When displaying the page that you're currenltly viewing
 - `<span>&hellip;</span>` to display '...'
 
 
-#### 7. "Next"
+###### 7. "Next"
 
 `<li class="next disabled"><span>Next &rarr;</span></li></ul></div>`
 
@@ -619,6 +635,52 @@ When displaying the page that you're currenltly viewing
 - with next class
 - If there is no link, disabled class is added. (If you don't want to display the previous link when it's not linked, please adjust CSS by using these classes.)
 - "Next &rarr;" is default text. But it can be configurable,
+
+#### CSS File
+
+In Page List block, it will load the
+/concrete/css/frontend/pagination.css
+
+But you sometime don't want to load extra css file.
+You can either do any of the 2 steps
+
+**1. Set page_theme.php to tell concrete5 that you're not using**
+
+This is highly recommended option.
+
+You are probably going to make new theme. So make sure to create page_theme.php and tell concrete5 that you won't be using any of frontend CSS files.
+
+
+Example
+
+```
+<?php
+public function registerAssets() {
+    $this->providesAsset('css', 'core/frontend/pagination');
+}
+```
+
+Then it won't load pagination CSS.
+
+
+**2. Override /concrete/css/frontend/pagination.css**
+
+Create a CSS file like /application/css/frontend/pagination.css
+If you don't want anything, you can simply make a blank CSS file
+
+**3. Override /concrete/blocks/page_list/controller.php**
+
+Create a controller override of Page List block at /application/blocks/page_list/controller.php, then remove or comment the following line
+
+`$this->requireAsset('css', 'core/frontend/pagination');` is.
+
+
+
+#### Related Document of customizing Pagination
+
+In addition, you can entirely customize the pagination format.
+
+ - [Styling the pagination - 5.7](https://www.concrete5.org/documentation/how-tos/designers/styling-the-pagination-5.7/)
 
 
 ## Image Slider
