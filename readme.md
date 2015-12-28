@@ -197,7 +197,7 @@ If you plan to use the same libraries, you should try to use the same version of
 **Especially, you should use same version of jQuery that concrete5 use**
 
 Library Name |c5.6.3.3| c5.7.3.1 | c5.7.5.2 | c5.7.5.3
------ |---- | -----| -----
+----- |---- | -----| -----|-----
 ace | N/A | 1.1.8 | 1.2.0 | 1.2.2
 backstretch | TBA | 2.0.4 | 2.0.4 | 2.0.4
 bootstrap | 2.0.3 | 3.1.1 | 3.1.1
