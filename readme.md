@@ -4,7 +4,7 @@ Switch branch for different language and versions.
 
 - concrete5.7.3.1 and later
 - Up to concrete5.7.5.3
-- Updated on 2015/12/28
+- Updated on 2016/1/8
 - Authored by Katz Ueno (concrete5 Japan, Inc.)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -177,6 +177,8 @@ or
 - /application/themes/XXX/assets/js/
 - /application/themes/XXX/assets/images/
 
+We recommend to put everything onto "assets" folder
+
 
 
 ## HTML Coding Location
@@ -248,7 +250,7 @@ If you want to make a (responsive) concrete5 theme, concerte5 supports the follo
 - Foundation
 - 960Grid
 
-If you are not sure which framework to use, we recommend to use Bootsrap.
+If you are not sure which framework to use, **we highly recommend to use Bootsrap.** In concrete5.7.x., most of the basic blocks and page are built with Bootstrap. So you may be able to reduce the number of hours.
 
 However, concrete5 use different version of Bootstrap. Be careful.
 
@@ -281,7 +283,7 @@ Except `ccm-page`, don't set any class naming `ccm-*` These are used for concret
 
 ## Body Wrapper Class (Required)
 
-From concrete5.7.x, the div tag with following CSS classes are inserted right after the body tag; and it closes right before the end of body tag.
+From concrete5.7.x, the `<div>` tag with following CSS classes are inserted right after the `<body>` tag; and it closes right before the end of `<body>` tag.
 
 - ccm-page
 - page-template-XXX (XXX is the handle of Page Templates)
