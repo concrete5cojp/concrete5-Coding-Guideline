@@ -4,7 +4,7 @@ Switch branch for different language and versions.
 
 - コーディングガイドライン (5.7.x 以降)
 - concrete5.7.5.3 対応
-- 更新 2015/12/28
+- 更新 2016/1/8
 - Authored by Katz Ueno (コンクリートファイブジャパン株式会社)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -32,7 +32,7 @@ HTML+CSS+JS の知識を持ったエンジニアが、クライアントワー�
 
 concrete5 はフロントのページ上で編集可能な CMS です。
 
-それは、編集ができるような管理系のインタフェースが、オモテのページにも出力されます。そうすると、自作 concrete5 テーマと、concrete5 の編集管理をするインターフェースがコンフリクトを起こさないようにする必要があります。
+それは、編集ができるような管理系のインタフェースが、表のページにも出力されます。そうすると、自作 concrete5 テーマと、concrete5 の編集管理をするインターフェースがコンフリクトを起こさないようにする必要があります。
 
 このコーディングガイドラインは、コンクリートアイブジャパン株式会社が、自身が行っている受託案件のために、パートナー企業にお見せしているコーディングガイドラインを一般公開しているものです。コンクリートファイブジャパン株式会社では、企業・団体様の concrete5 サイト制作や制作会社様のプロジェクトのサポートを行っています。
 
@@ -169,7 +169,7 @@ concrete5.7.x | /application/themes/XXX
 - /application/themes/XXX/assets/js/
 - /application/themes/XXX/assets/images/
 
-などとまとめられることを推奨します。
+などとまとめられることを推奨します。（assets フォルダにまとめる後者をより推奨します。）
 
 
 ## HTML コーディング
@@ -241,7 +241,7 @@ underscore | N/A | TBA | 1.6.0 | 1.6.0
 - Foundation
 - 960Grid
 
-どのフレームワークを決めかねている場合は Bootstrap をお使いください。
+どのフレームワークを決めかねている場合は Bootstrap をお使いください。concrete5.7.x のブロックは、Bootstrap を中心に作られている場合があるため、concrete5 側での修正工数が少なくなるので、Bootstrap がおすすめです。
 
 ただ concrete5 のバージョンによって concrete5 で使用している Bootstrap のバージョンが変わってくるので、ご注意ください。
 
@@ -274,7 +274,7 @@ ccm-page というクラスを除いて ccm-* というクラスは使用しな�
 
 ## Body Wrapper クラス (必須)
 
-concrete5.7.x では、下記の CSS クラスが組み込まれた <div> タグを <body> の開始直後と </body> 閉じタグの直前に挿入します。
+concrete5.7.x では、下記の CSS クラスが組み込まれた `<div>` タグを `<body>` の開始直後と `</body>` 閉じタグの直前に挿入します。
 
 - ccm-page
 - page-template-XXX (XXX はページテンプレートのハンドル)
