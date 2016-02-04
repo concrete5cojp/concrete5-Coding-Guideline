@@ -3,8 +3,8 @@
 Switch branch for different language and versions.
 
 - コーディングガイドライン (5.7.x 以降)
-- concrete5.7.5.3 対応
-- 更新 2016/1/8
+- concrete5.7.5.6 対応
+- 更新 2016/2/4
 - Authored by Katz Ueno (コンクリートファイブジャパン株式会社)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -188,40 +188,42 @@ HTML コーディングもモックアップなどは
 
 **特に jQuery は concrete5 と密接に関わり合っているので、競合する JavaScript を利用する際は、最新の注意を払ってください。**
 
-ライブラリ名 |c5.6.3.3| c5.7.3.1 | c5.7.5.2 | c5.7.5.3
------ | ---- | -----| ----- | -----
-ace | N/A | 1.1.8 | 1.2.0 | 1.2.2
-backstretch | TBA | 2.0.4 | 2.0.4 | 2.0.4
-bootstrap | 2.0.3 | 3.1.1 | 3.1.1 | 3.1.1
-dropzone | N/A | 4.0.1 | 4.1.0 | 4.2.0
-dynatree | N/A | 1.2.6 | 1.2.8 | 1.2.8
-font-awesome | N/A  | TBA  | 4.2.0 | 4.2.0
-html5shiv | N/A  | N/A | 3.7.2 | 3.7.2
-respond | N/A  | N/A | 1.4.2 | 1.4.2
-jquery | 1.7.2 | 1.11.1 | 1.11.3 | 1.11.3
-jquery/awesome-rating | N/A | TBA  | 0.1.1 | 0.1.1
-jquery/cookie |  N/A | 1.4.1 | 1.4.1 | 1.4.1
-jquery/fileupload |  N/A | TBA | 5.39.0 | 5.39.0
-jquery/form |  N/A | TBA | 2.87 | 2.87
-jquery/live-update |  N/A | TBA | TBA | TBA
-jquery/magnetic-pop-up |  N/A | TBA | TBA | 1.0.0
-jquery/mousewheel |  N/A | TBA | TBA | 3.1.12
-jquery/pep |  N/A | TBA | TBA | TBA
-jquery/placeholder |  N/A | TBA | TBA | 2.0.8
-jquery/tristate |  N/A | TBA | TBA | TBA
-jquery/touch-punch | N/A | TBA | 0.2.3 | 0.2.3
-jquery/ui | TBA | 1.10.3 | 1.11.4 | 1.11.4
-jquery/visualize | N/A | TBA | TBA | TBA
-kinetic | N/A | TBA | 4.7.2 | 4.7.2
-Modernizr | N/A | TBA  | 2.8.3 | 2.8.3
-packery | N/A | TBA | TBA | 1.0.2
-picturefill | N/A | TBA | 2.3.1 | 2.3.1
-redactor | N/A | TBA | 10.2.1 | 10.2.1
-select2 | N/A | TBA | 3.5.1 | 3.5.1
-spectrum | N/A | TBA | TBA | 1.3.4
-swfobject | N/A | TBA | TBA | TBA
-TinyMCE | 3.5.11 | N/A | N/A | N/A
-underscore | N/A | TBA | 1.6.0 | 1.6.0
+ライブラリ名 |c5.6.3.3| c5.7.3.1 | c5.7.5.2 | c5.7.5.3 | c5.7.5.6
+----- | ---- | ----- | ----- | ----- | -----
+ace | N/A | 1.1.8 | 1.2.0 | 1.2.2 | 1.2.2
+backbone | TBA | TBA | TBA | TBA | 1.1.2
+backstretch | TBA | 2.0.4 | 2.0.4 | 2.0.4 | 2.0.4
+bootstrap | 2.0.3 | 3.1.1 | 3.1.1 | 3.1.1 | 3.1.1
+dropzone | N/A | 4.0.1 | 4.1.0 | 4.2.0 | 4.2.0
+dynatree | N/A | 1.2.6 | 1.2.8 | 1.2.8 | 1.2.4
+font-awesome | N/A  | TBA  | 4.2.0 | 4.2.0 | 4.2.0
+html5shiv | N/A  | N/A | 3.7.2 | 3.7.2 | 3.7.2
+respond | N/A  | N/A | 1.4.2 | 1.4.2 | 1.4.2
+jquery | 1.7.2 | 1.11.1 | 1.11.3 | 1.11.3 | 1.11.3
+jquery/awesome-rating | N/A | TBA  | 0.1.1 | 0.1.1 | 0.1.1
+jquery/cookie |  N/A | 1.4.1 | 1.4.1 | 1.4.1 | 1.4.1
+jquery/fileupload |  N/A | TBA | 5.39.0 | 5.39.0 | 5.39.0
+jquery/form |  N/A | TBA | 2.87 | 2.87 | 2.87
+jquery/live-update |  N/A | TBA | TBA | TBA | TBA
+jquery/magnetic-pop-up |  N/A | TBA | TBA | 1.0.0 | 1.0.0
+jquery/mousewheel |  N/A | TBA | TBA | 3.1.12 | 3.1.12
+jquery/pep |  N/A | TBA | TBA | TBA | TBA
+jquery/placeholder |  N/A | TBA | TBA | 2.0.8 | 2.0.8
+jquery/textcounter |  N/A | N/A | N/A | N/A | 0.3.4
+jquery/tristate |  N/A | TBA | TBA | TBA | TBA 
+jquery/touch-punch | N/A | TBA | 0.2.3 | 0.2.3 | 0.2.3
+jquery/ui | TBA | 1.10.3 | 1.11.4 | 1.11.4 | 1.11.4
+jquery/visualize | N/A | TBA | TBA | TBA | TBA
+kinetic | N/A | TBA | 4.7.2 | 4.7.2 | 4.7.2
+Modernizr | N/A | TBA  | 2.8.3 | 2.8.3 | 2.8.3
+packery | N/A | TBA | TBA | 1.0.2 | 1.0.2
+picturefill | N/A | TBA | 2.3.1 | 2.3.1 | 2.3.1
+redactor | N/A | TBA | 10.2.1 | 10.2.1 | 10.2.1
+select2 | N/A | TBA | 3.5.1 | 3.5.1 | 3.5.1
+spectrum | N/A | TBA | TBA | 1.3.4 | 1.3.4
+swfobject | N/A | TBA | TBA | TBA | 2.1
+TinyMCE | 3.5.11 | N/A | N/A | N/A | N/A
+underscore | N/A | TBA | 1.6.0 | 1.6.0 | 1.6.0
 
 - N/A: そのバージョンの concrete5 パッケージに入っていないライブラリ
 - TBA: バージョン番号を調査中、もしくは不明
@@ -272,6 +274,7 @@ Body には Position を設定しないでください。
 
 ccm-page というクラスを除いて ccm-* というクラスは使用しないでください。これらは concrete5 が管理画面などのインターフェース用に使用しています。
 
+
 ## Body Wrapper クラス (必須)
 
 concrete5.7.x では、下記の CSS クラスが組み込まれた `<div>` タグを `<body>` の開始直後と `</body>` 閉じタグの直前に挿入します。
@@ -288,6 +291,55 @@ concrete5.7.x では、下記の CSS クラスが組み込まれた `<div>` タ�
 * アンダースコアー(_) は、Body Wrapper Class として出力されるときに、 **ハイフン(-) に自動変換** されます
 * ページタイプは「指定なし」が可能なため、page-type-XXX が出力されないパターンも想定可能です。
 
+
+## HTML 要素や Bootstrap の基本 CSS に直接 CSS スタイルを割り当てない
+
+concrete5 では、同じページ内に管理画面用のタグも出力します。
+
+そのために、 a input タグや、Bootstrap の .btn や .btn-success などの class スタイルを .ccm-page を親要素を指定せずに宣言しないでください。
+
+また、既存の HTML+CSS を concrete5 に移行する場合、LESS を使って .ccm-page の子要素としてまとめる方法もあります。
+
+悪い例: 下記のような CSS を宣言しない
+
+```
+/* concrete5 の管理画面でも影響する HTML 要素 */
+a { /* いろいろな CSS  */ }
+input { /* いろいろな CSS  */ }
+
+/* concrete5 の管理画面でも影響する Bootstrap のクラス */
+.btn { /* いろいろな CSS  */ }
+```
+
+良い例1 : 下記のように .ccm-page の下に CSS を宣言する
+
+```
+/* Page Wrapper の中だけに影響する HTML 要素 */
+
+.ccm-page a { /* いろいろな CSS  */ }
+.ccm-page input { /* いろいろな CSS  */ }
+
+/* Page Wrapper の中だけに影響する Bootstrap のクラス */
+
+.ccm-page .btn { /* いろいろな CSS  */ }
+
+```
+
+良い例2 : LESS を使ってシンプルに実装する
+
+```
+/* Page Wrapper の中 に宣言する */
+
+.ccm-page {
+
+    a { /* いろいろな CSS  */ }
+    input { /* いろいろな CSS  */ }
+    
+    .btn { /* いろいろな CSS  */ }
+
+}
+
+```
 
 ## Z-index について (必須)
 
