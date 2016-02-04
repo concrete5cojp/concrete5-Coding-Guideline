@@ -303,8 +303,6 @@ If you are not sure what to do, just ignore `page-template-XXX` and `page-type-X
 
 ## Don't apply CSS style to HTML elements or Bootstrap class directly
 
-concrete5 では、同じページ内に管理画面用のタグも出力します。
-
 concrete5 prints out the HTML as the part of its control panel. So you don't want to cause the conflict between your own CSS and concrete5.
 
 Therefore, you don't want to apply CSS style directly to HTML elements, such as `<a>` or `<input>`, and Bootstrap class such as .btn .btn-success and etc without specifying .ccm-page as the parent class.
