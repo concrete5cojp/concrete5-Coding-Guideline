@@ -3,8 +3,8 @@
 Switch branch for different language and versions.
 
 - concrete5.7.3.1 and later
-- Up to concrete5.7.5.3
-- Updated on 2016/1/8
+- Up to concrete5.7.5.6
+- Updated on 2016/2/4
 - Authored by Katz Ueno (concrete5 Japan, Inc.)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -198,40 +198,42 @@ If you plan to use the same libraries, you should try to use the same version of
 
 **Especially, you should use same version of jQuery that concrete5 use**
 
-Library Name |c5.6.3.3| c5.7.3.1 | c5.7.5.2 | c5.7.5.3
------ |---- | -----| -----|-----
-ace | N/A | 1.1.8 | 1.2.0 | 1.2.2
-backstretch | TBA | 2.0.4 | 2.0.4 | 2.0.4
-bootstrap | 2.0.3 | 3.1.1 | 3.1.1 | 3.1.1
-dropzone | N/A | 4.0.1 | 4.1.0 | 4.2.0
-dynatree | N/A | 1.2.6 | 1.2.8 | 1.2.8
-font-awesome | N/A  | TBA  | 4.2.0 | 4.2.0
-html5shiv | N/A  | N/A | 3.7.2 | 3.7.2
-respond | N/A  | N/A | 1.4.2 | 1.4.2
-jquery | 1.7.2 | 1.11.1 | 1.11.3 | 1.11.3
-jquery/awesome-rating | N/A | TBA  | 0.1.1 | 0.1.1
-jquery/cookie |  N/A | 1.4.1 | 1.4.1 | 1.4.1
-jquery/fileupload |  N/A | TBA | 5.39.0 | 5.39.0
-jquery/form |  N/A | TBA | 2.87 | 2.87
-jquery/live-update |  N/A | TBA | TBA | TBA
-jquery/magnetic-pop-up |  N/A | TBA | TBA | 1.0.0
-jquery/mousewheel |  N/A | TBA | TBA | 3.1.12
-jquery/pep |  N/A | TBA | TBA | TBA
-jquery/placeholder |  N/A | TBA | TBA | 2.0.8
-jquery/tristate |  N/A | TBA | TBA | TBA
-jquery/touch-punch | N/A | TBA | 0.2.3 | 0.2.3
-jquery/ui | TBA | 1.10.3 | 1.11.4 | 1.11.4
-jquery/visualize | N/A | TBA | TBA | TBA
-kinetic | N/A | TBA | 4.7.2 | 4.7.2
-Modernizr | N/A | TBA  | 2.8.3 | 2.8.3
-packery | N/A | TBA | TBA | 1.0.2
-picturefill | N/A | TBA | 2.3.1 | 2.3.1
-redactor | N/A | TBA | 10.2.1 | 10.2.1
-select2 | N/A | TBA | 3.5.1 | 3.5.1
-spectrum | N/A | TBA | TBA | 1.3.4
-swfobject | N/A | TBA | TBA | TBA
-TinyMCE | 3.5.11 | N/A | N/A | N/A
-underscore | N/A | TBA | 1.6.0 | 1.6.0
+Library Name |c5.6.3.3| c5.7.3.1 | c5.7.5.2 | c5.7.5.3 | c5.7.5.6
+----- | ---- | ----- | ----- | ----- | -----
+ace | N/A | 1.1.8 | 1.2.0 | 1.2.2 | 1.2.2
+backbone | TBA | TBA | TBA | TBA | 1.1.2
+backstretch | TBA | 2.0.4 | 2.0.4 | 2.0.4 | 2.0.4
+bootstrap | 2.0.3 | 3.1.1 | 3.1.1 | 3.1.1 | 3.1.1
+dropzone | N/A | 4.0.1 | 4.1.0 | 4.2.0 | 4.2.0
+dynatree | N/A | 1.2.6 | 1.2.8 | 1.2.8 | 1.2.4
+font-awesome | N/A  | TBA  | 4.2.0 | 4.2.0 | 4.2.0
+html5shiv | N/A  | N/A | 3.7.2 | 3.7.2 | 3.7.2
+respond | N/A  | N/A | 1.4.2 | 1.4.2 | 1.4.2
+jquery | 1.7.2 | 1.11.1 | 1.11.3 | 1.11.3 | 1.11.3
+jquery/awesome-rating | N/A | TBA  | 0.1.1 | 0.1.1 | 0.1.1
+jquery/cookie |  N/A | 1.4.1 | 1.4.1 | 1.4.1 | 1.4.1
+jquery/fileupload |  N/A | TBA | 5.39.0 | 5.39.0 | 5.39.0
+jquery/form |  N/A | TBA | 2.87 | 2.87 | 2.87
+jquery/live-update |  N/A | TBA | TBA | TBA | TBA
+jquery/magnetic-pop-up |  N/A | TBA | TBA | 1.0.0 | 1.0.0
+jquery/mousewheel |  N/A | TBA | TBA | 3.1.12 | 3.1.12
+jquery/pep |  N/A | TBA | TBA | TBA | TBA
+jquery/placeholder |  N/A | TBA | TBA | 2.0.8 | 2.0.8
+jquery/textcounter |  N/A | N/A | N/A | N/A | 0.3.4
+jquery/tristate |  N/A | TBA | TBA | TBA | TBA 
+jquery/touch-punch | N/A | TBA | 0.2.3 | 0.2.3 | 0.2.3
+jquery/ui | TBA | 1.10.3 | 1.11.4 | 1.11.4 | 1.11.4
+jquery/visualize | N/A | TBA | TBA | TBA | TBA
+kinetic | N/A | TBA | 4.7.2 | 4.7.2 | 4.7.2
+Modernizr | N/A | TBA  | 2.8.3 | 2.8.3 | 2.8.3
+packery | N/A | TBA | TBA | 1.0.2 | 1.0.2
+picturefill | N/A | TBA | 2.3.1 | 2.3.1 | 2.3.1
+redactor | N/A | TBA | 10.2.1 | 10.2.1 | 10.2.1
+select2 | N/A | TBA | 3.5.1 | 3.5.1 | 3.5.1
+spectrum | N/A | TBA | TBA | 1.3.4 | 1.3.4
+swfobject | N/A | TBA | TBA | TBA | 2.1
+TinyMCE | 3.5.11 | N/A | N/A | N/A | N/A
+underscore | N/A | TBA | 1.6.0 | 1.6.0 | 1.6.0
 
 - N/A: not included in the core
 - TBA: To be announced / currently checking its version.
@@ -297,6 +299,54 @@ If you are not sure what to do, just ignore `page-template-XXX` and `page-type-X
 * To name Page Template and Page Type handles, you can use alphabet, number and underscore(_)
 * However, underscore(_) will be **converted to hyphen (-) automatically** when printing it to the body wrapper class
 * The user may leave the Page Type blank. Therefore, `page-type-xxx` may not be printed out to HTML sometime.
+
+
+## Don't apply CSS style to HTML elements or Bootstrap class directly
+
+concrete5 では、同じページ内に管理画面用のタグも出力します。
+
+concrete5 prints out the HTML as the part of its control panel. So you don't want to cause the conflict between your own CSS and concrete5.
+
+Therefore, you don't want to apply CSS style directly to HTML elements, such as `<a>` or `<input>`, and Bootstrap class such as .btn .btn-success and etc without specifying .ccm-page as the parent class.
+
+If you're converting the existing HTML+CSS Template, I recommend to use LESS and wrap with .ccm-pages class
+
+
+BAD EXAMPLE: Don't make the CSS like the following
+
+```
+/* HTML elements that will also affect concrete5 dashboard */
+a { /* CSS  */ }
+input { /* CSS  */ }
+
+/* Bootstrap classes that will also affect concrete5 dashboard */
+.btn { /* CSS  */ }
+```
+
+GOOD EXAMPLE 1: Specify CSS under .ccm-page class
+
+```
+/* Make sure to wrap HTML elements with Page Wrapper class */
+.ccm-page a { /* CSS  */ }
+.ccm-page input { /* CSS */ }
+
+/* Make sure to wrap Bootstrap class with Page Wrapper */
+.ccm-page .btn { /* CSS */ }
+```
+
+GOOD EXAMPLE 2 : Using LESS
+
+```
+/* Specify all CSS within .ccm-pages class */
+
+.ccm-page {
+
+    a { /* CSS */ }
+    input { /* CSS */ }
+    
+    .btn { /* CSS */ }
+}
+```
 
 
 ## Z-index (Required)
