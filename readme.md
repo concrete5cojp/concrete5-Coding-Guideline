@@ -25,8 +25,6 @@ Japanese (日本語) | https://github.com/katzueno/concrete5-Coding-Guideline/tr
 
 Additional translation are welcome! Please fork it, make a branch for the language, translate and send me the pull request!
 
-**I'm still translating English.**
-
 
 # About This Guideline
 
@@ -34,7 +32,7 @@ Additional translation are welcome! Please fork it, make a branch for the langua
 
 This guideline was made for front-end engineer who is creating an original concrete5 for client specific work.
 
-concrete5 is front-end flexible CMS. But it also means that it be could easily resulted in CSS and/or JS conflict between site's CSS and interface UI..
+concrete5 is front-end flexible CMS. But it also means that it be could easily resulted in CSS and/or JS conflict between site's CSS and interface UI.
 
 This coding guideline is made to help avoid the conflict for concrete5 Japan, Inc. partners.
 
@@ -787,7 +785,7 @@ Example: http://memocarilog.info/memocarilog-demo/galleriffic-demo/
 
 - Navigation Link Text
 - Title Text
-- Description
+- Descriptionface
 
 ## Page Title
 
