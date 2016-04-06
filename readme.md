@@ -4,7 +4,7 @@ Switch branch for different language and versions.
 
 - concrete5.7.3.1 and later
 - Up to concrete5.7.5.6
-- Updated on 2016/2/4
+- Updated on 2016/4/6
 - Authored by Katz Ueno (concrete5 Japan, Inc.)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -262,11 +262,11 @@ When using Foundation, you may need to be careful. But you don't get affected by
 
 ## Do-nots & Cautions
 
-### body Do-nots
+### body & HTML Do-nots
 
-#### Don't add ID and class to body (Required)
+#### Don't add ID and class to body and html (Required)
 
-Don't add ID and class to body tag.
+Don't add ID and class to body and html tag. Avoid using reset.css.
 
 #### Don't apply Position to body (Required)
 
