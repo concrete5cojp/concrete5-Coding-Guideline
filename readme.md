@@ -254,11 +254,11 @@ Foundation をお使いの場合は UI の部分のハックが多少必要で�
 
 ## 禁止 & 注意事項
 
-### body タグ禁止事項
+### body & HTML タグ禁止事項
 
-#### body に ID や class を付けない (必須)
+#### body & HTML に ID や class を付けない (必須)
 
-ページのデザインを変えるために Body タグに ID や class をつけることはしないでください。
+ページのデザインを変えるために Body タグに ID や class をつけることはしないでください。reset なども避けてください。
 
 #### body に Position を設定しない (必須)
 
