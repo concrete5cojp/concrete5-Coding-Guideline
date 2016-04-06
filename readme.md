@@ -190,7 +190,7 @@ Please refer the same CSS, JS and images files that used for concrete5 themes fi
 
 # Library Set
 
-Each cocnrete5 is shipped with the famous libraries.
+Each concrete5 is shipped with the famous libraries.
 
 If you plan to use the same libraries, you should try to use the same version of libraries to avoid conflict
 
