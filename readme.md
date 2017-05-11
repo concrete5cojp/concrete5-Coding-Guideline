@@ -4,7 +4,7 @@ Switch branch for different language and versions.
 
 - コーディングガイドライン (5.7.x 以降)
 - concrete5.7.5.6 対応
-- 更新 2016/4/6
+- 更新 2017/5/11
 - Authored by Katz Ueno (コンクリートファイブジャパン株式会社)
 - GitHub: https://github.com/katzueno/concrete5-Coding-Guideline
 
@@ -188,42 +188,49 @@ HTML コーディングもモックアップなどは
 
 **特に jQuery は concrete5 と密接に関わり合っているので、競合する JavaScript を利用する際は、最新の注意を払ってください。**
 
-ライブラリ名 |c5.6.3.3| c5.7.3.1 | c5.7.5.2 | c5.7.5.3 | c5.7.5.6
------ | ---- | ----- | ----- | ----- | -----
-ace | N/A | 1.1.8 | 1.2.0 | 1.2.2 | 1.2.2
-backbone | TBA | TBA | TBA | TBA | 1.1.2
-backstretch | TBA | 2.0.4 | 2.0.4 | 2.0.4 | 2.0.4
-bootstrap | 2.0.3 | 3.1.1 | 3.1.1 | 3.1.1 | 3.1.1
-dropzone | N/A | 4.0.1 | 4.1.0 | 4.2.0 | 4.2.0
-dynatree | N/A | 1.2.6 | 1.2.8 | 1.2.8 | 1.2.4
-font-awesome | N/A  | TBA  | 4.2.0 | 4.2.0 | 4.2.0
-html5shiv | N/A  | N/A | 3.7.2 | 3.7.2 | 3.7.2
-respond | N/A  | N/A | 1.4.2 | 1.4.2 | 1.4.2
-jquery | 1.7.2 | 1.11.1 | 1.11.3 | 1.11.3 | 1.11.3
-jquery/awesome-rating | N/A | TBA  | 0.1.1 | 0.1.1 | 0.1.1
-jquery/cookie |  N/A | 1.4.1 | 1.4.1 | 1.4.1 | 1.4.1
-jquery/fileupload |  N/A | TBA | 5.39.0 | 5.39.0 | 5.39.0
-jquery/form |  N/A | TBA | 2.87 | 2.87 | 2.87
-jquery/live-update |  N/A | TBA | TBA | TBA | TBA
-jquery/magnetic-pop-up |  N/A | TBA | TBA | 1.0.0 | 1.0.0
-jquery/mousewheel |  N/A | TBA | TBA | 3.1.12 | 3.1.12
-jquery/pep |  N/A | TBA | TBA | TBA | TBA
-jquery/placeholder |  N/A | TBA | TBA | 2.0.8 | 2.0.8
-jquery/textcounter |  N/A | N/A | N/A | N/A | 0.3.4
-jquery/tristate |  N/A | TBA | TBA | TBA | TBA 
-jquery/touch-punch | N/A | TBA | 0.2.3 | 0.2.3 | 0.2.3
-jquery/ui | TBA | 1.10.3 | 1.11.4 | 1.11.4 | 1.11.4
-jquery/visualize | N/A | TBA | TBA | TBA | TBA
-kinetic | N/A | TBA | 4.7.2 | 4.7.2 | 4.7.2
-Modernizr | N/A | TBA  | 2.8.3 | 2.8.3 | 2.8.3
-packery | N/A | TBA | TBA | 1.0.2 | 1.0.2
-picturefill | N/A | TBA | 2.3.1 | 2.3.1 | 2.3.1
-redactor | N/A | TBA | 10.2.1 | 10.2.1 | 10.2.1
-select2 | N/A | TBA | 3.5.1 | 3.5.1 | 3.5.1
-spectrum | N/A | TBA | TBA | 1.3.4 | 1.3.4
-swfobject | N/A | TBA | TBA | TBA | 2.1
-TinyMCE | 3.5.11 | N/A | N/A | N/A | N/A
-underscore | N/A | TBA | 1.6.0 | 1.6.0 | 1.6.0
+ライブラリ名 |c5.6.3.4| c5.7.5.13 | c5.8.2.0
+----- | ---- | ----- | ----- 
+ace | N/A | TBA | TBA 
+backbone | N/A | 1.1.2 | 1.1.2 |
+backstretch | N/A | 2012 | 2012 
+bootstrap | 2.0.3 | 3.1.1 | 3.3.7 
+bootstrap-editable | N/A | 1.5.1 | 1.5.1 
+dropzone | N/A | 2.0.3 | 2.0.3
+dynatree | N/A | 1.2.4 | N/A
+fancytree | N/A | N/A | 2.18.0
+font-awesome | N/A | 4.2.0 | 4.2.0 
+html5shiv | N/A  | 3.7.2 | 3.7.2 
+jquery | 1.7.2 | 1.11.3 | 1.11.3  
+jquery/awesome-rating | N/A | 0.1.1 | 0.1.1
+jquery/cookie |  N/A | TBA | TBA
+jquery/fileupload |  N/A | 5.39.0 | 5.39.0 
+jquery/form |  N/A | 2.87 | 2.87
+jquery/live-update |  N/A | TBA | TBA 
+jquery/magnetic-pop-up |  N/A | 1.1.0 | 1.1.0
+jquery/mousewheel |  N/A | 3.1.12 | 3.1.12 
+jquery/pep |  N/A | TBA | TBA
+jquery/placeholder |  N/A | 2.0.8 | 2.0.8 
+jquery/textcounter |  N/A | 0.3.4 | 0.3.4
+jquery/tristate |  N/A | TBA | TBA 
+jquery/touch-punch | N/A | 0.2.3 | 0.2.3 
+jquery/ui | 1.8.16 | 1.11.4 | 1.11.4 
+jquery/visualize | N/A | TBA | TBA 
+kinetic | N/A | 4.7.2 | 4.7.2 
+Modernizr | N/A | 2.8.3 | 2.8.3 
+packery | N/A | 1.0.2 | 1.0.2 
+parallax-image| N/A | TBA | TBA 
+picturefill | N/A | 3.0.2 |3.0.2
+redactor | N/A | 10.2.1 | 10.2.1 
+respond | N/A | 1.4.2 | 1.4.2
+responsive-slides| N/A | 1.54 | 1.54
+retinajs | N/A | TBA | TBA
+select2 | N/A | 3.5.1 | 3.5.4 
+spectrum | N/A | 1.3.4 | 1.3.4 | 
+swfobject | 2.1 | 2.1 | 2.1 
+textcounter | N/A | TBA | TBA 
+tourist | N/A | TBA | TBA 
+TinyMCE | 3.5.11 | N/A | N/A | 
+underscore | N/A | 1.6.0 | 1.6.0 | 
 
 - N/A: そのバージョンの concrete5 パッケージに入っていないライブラリ
 - TBA: バージョン番号を調査中、もしくは不明
